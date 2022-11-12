@@ -3,7 +3,7 @@
 ## Getting Started
 
 ### splashScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg" width=25% height=5%>
+<img src="https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg" width=25% height=25%>
 
 
 ### homeScreen
