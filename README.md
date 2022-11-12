@@ -3,6 +3,7 @@
 ## Getting Started
 
 
+<img src="https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg" width=50% height=50%>
 ![splashScreen](https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg)
 ![homeScreen](https://user-images.githubusercontent.com/94618324/201491055-cd8ed1b1-85f4-4fca-a925-4761648471ae.jpeg)
 ![OtpCodeScreen](https://user-images.githubusercontent.com/94618324/201491056-9055a670-6ec3-4ab6-9c4d-fe4bddbf1660.jpeg)
