@@ -1,19 +1,7 @@
-# new_3ala5er
-
-A new Flutter project.
+# Diabetes App
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 ![splashScreen](https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg)
 ![homeScreen](https://user-images.githubusercontent.com/94618324/201491055-cd8ed1b1-85f4-4fca-a925-4761648471ae.jpeg)
