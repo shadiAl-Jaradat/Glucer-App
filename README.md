@@ -20,14 +20,10 @@ samples, guidance on mobile development, and a full API reference.
 ![OtpCodeScreen](https://user-images.githubusercontent.com/94618324/201491056-9055a670-6ec3-4ab6-9c4d-fe4bddbf1660.jpeg =200x200)
 ![registrationScreen](https://user-images.githubusercontent.com/94618324/201491059-7b9e569b-f952-44b7-a089-50f1afefa5af.jpeg =200x200)
 
-Patient Views 
+![addReading](https://user-images.githubusercontent.com/94618324/201491065-7dea8a9c-879a-467e-87f3-3426e4fe9f38.jpeg =200x200)
+![ReadingsScreen](https://user-images.githubusercontent.com/94618324/201491068-9e1c2e99-6a93-4f98-9f0d-e06800623721.jpeg =200x200)
+![chartScreen](https://user-images.githubusercontent.com/94618324/201491070-6f1e2c36-ae53-4411-b8a2-8d2995a0e74e.jpeg =200x200)
 
-![addReading](https://user-images.githubusercontent.com/94618324/201491065-7dea8a9c-879a-467e-87f3-3426e4fe9f38.jpeg)
-![ReadingsScreen](https://user-images.githubusercontent.com/94618324/201491068-9e1c2e99-6a93-4f98-9f0d-e06800623721.jpeg)
-![chartScreen](https://user-images.githubusercontent.com/94618324/201491070-6f1e2c36-ae53-4411-b8a2-8d2995a0e74e.jpeg)
-
-
-Doctor Views 
 
 https://user-images.githubusercontent.com/94618324/201491073-791181ee-605e-4751-b4ca-f548c954c9c8.mp4
 
