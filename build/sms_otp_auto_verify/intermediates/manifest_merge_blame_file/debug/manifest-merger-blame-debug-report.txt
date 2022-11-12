@@ -1,0 +1,27 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.oohyugi.sms_otp_auto_verify" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+5-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+6
+7    <application>
+7-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:4:5-13:19
+8        <receiver
+8-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:5:9-12:20
+9            android:name="com.oohyugi.sms_otp_auto_verify.SmsBroadcastReceiver"
+9-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:6:13-49
+10            android:exported="true"
+10-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:7:13-36
+11            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+11-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:8:13-87
+12            <intent-filter>
+12-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:9:13-11:29
+13                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+13-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:10:17-94
+13-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:10:25-91
+14            </intent-filter>
+15        </receiver>
+16    </application>
+17
+18</manifest>

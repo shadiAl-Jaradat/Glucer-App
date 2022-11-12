@@ -1,0 +1,9 @@
+dev/britto/pdf_viewer_plugin/PdfViewerPlugin.java
+ dev.britto.pdf_viewer_plugin.PdfViewerPlugin
+dev/britto/pdf_viewer_plugin/PdfViewerFactory.java
+ dev.britto.pdf_viewer_plugin.PdfViewerFactory
+dev/britto/pdf_viewer_plugin/BuildConfig.java
+ dev.britto.pdf_viewer_plugin.BuildConfig
+dev/britto/pdf_viewer_plugin/PdfViewer.java
+ dev.britto.pdf_viewer_plugin.CustomPDFView
+ dev.britto.pdf_viewer_plugin.PdfViewer

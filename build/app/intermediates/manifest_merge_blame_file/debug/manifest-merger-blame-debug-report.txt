@@ -1,0 +1,620 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.new_3ala5er"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+16
+17    <queries>
+17-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
+18        <intent>
+18-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
+19            <action android:name="android.intent.action.GET_CONTENT" />
+19-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
+19-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
+20
+21            <data android:mimeType="*/*" />
+21-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+21-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
+22        </intent>
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+25-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+26    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+26-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-83
+26-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-80
+27    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+27-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:13:5-106
+27-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:13:22-103
+28    <uses-permission android:name="android.permission.CAMERA" /> <!-- HMS-SDK引导升级HMS功能，保存下载的升级包需要SD卡写权限 -->
+28-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:11:5-65
+28-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:11:22-62
+29    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+29-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:12:5-81
+29-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:12:22-78
+30
+31    <application
+31-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:3:4-40:19
+32        android:name="androidx.multidex.MultiDexApplication"
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.7.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3f6d9ef3b65bfee01861f2e5d3bab0bd/core-1.7.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/ic_launcher"
+35-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:5:9-43
+36        android:label="طمني عالسكر" >
+36-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:4:9-36
+37        <activity
+37-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:6:9-34:20
+38            android:name="com.example.new_3ala5er.MainActivity"
+38-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:7:13-41
+39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+39-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:10:13-163
+40            android:hardwareAccelerated="true"
+40-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:11:13-47
+41            android:launchMode="singleTop"
+41-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:8:13-43
+42            android:theme="@style/LaunchTheme"
+42-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:9:13-47
+43            android:windowSoftInputMode="adjustResize" >
+43-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:12:13-55
+44
+45            <!--
+46                 Specifies an Android theme to apply to this Activity as soon as
+47                 the Android process has started. This theme is visible to the user
+48                 while the Flutter UI initializes. After that, this theme continues
+49                 to determine the Window background behind the Flutter UI.
+50            -->
+51            <meta-data
+51-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:17:13-20:17
+52                android:name="io.flutter.embedding.android.NormalTheme"
+52-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:18:15-70
+53                android:resource="@style/NormalTheme" />
+53-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:19:15-52
+54            <!--
+55                 Displays an Android View that continues showing the launch screen
+56                 Drawable until Flutter paints its first frame, then this splash
+57                 screen fades out. A splash screen is useful to avoid any visual
+58                 gap between the end of Android's launch screen and the painting of
+59                 Flutter's first frame.
+60            -->
+61            <meta-data
+61-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:26:13-29:17
+62                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+62-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:27:15-79
+63                android:resource="@drawable/launch_background" />
+63-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:28:15-61
+64
+65            <intent-filter>
+65-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:30:13-33:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:31:17-68
+66-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:31:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:32:17-76
+68-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:32:27-74
+69            </intent-filter>
+70        </activity>
+71        <!--
+72             Don't delete the meta-data below.
+73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+74        -->
+75        <meta-data
+75-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:37:9-39:33
+76            android:name="flutterEmbedding"
+76-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:38:13-44
+77            android:value="2" />
+77-->/Users/shady-jaradat/StudioProjects/project_DOG_father/android/app/src/main/AndroidManifest.xml:39:13-30
+78
+79        <service
+79-->[:firebase_database] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[:firebase_database] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+82            android:exported="false" >
+82-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:66:13-37
+83            <meta-data
+83-->[:firebase_database] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+84-->[:firebase_database] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_database] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+87                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+87-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+89            <meta-data
+89-->[:firebase_auth] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+90-->[:firebase_auth] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_auth] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+92            <meta-data
+92-->[:firebase_storage] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+93-->[:firebase_storage] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_storage] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[:firebase_core] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+96-->[:firebase_core] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:firebase_core] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:67:13-69:85
+99                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+99-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:68:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:69:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-firestore:24.1.2] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:20:13-22:85
+102                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+102-->[com.google.firebase:firebase-firestore:24.1.2] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:21:17-111
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-firestore:24.1.2] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:22:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-storage:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:33:13-35:85
+105                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+105-->[com.google.firebase:firebase-storage:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:34:17-107
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-storage:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:35:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-database:20.0.5] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/979df618dd2074d2c1fd7632e9f55cfe/jetified-firebase-database-20.0.5/AndroidManifest.xml:32:13-34:85
+108                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+108-->[com.google.firebase:firebase-database:20.0.5] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/979df618dd2074d2c1fd7632e9f55cfe/jetified-firebase-database-20.0.5/AndroidManifest.xml:33:17-109
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-database:20.0.5] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/979df618dd2074d2c1fd7632e9f55cfe/jetified-firebase-database-20.0.5/AndroidManifest.xml:34:17-82
+110        </service>
+111
+112        <receiver
+112-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-15:20
+113            android:name="com.oohyugi.sms_otp_auto_verify.SmsBroadcastReceiver"
+113-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-80
+114            android:exported="true"
+114-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-36
+115            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+115-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-87
+116            <intent-filter>
+116-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-14:29
+117                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+117-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-94
+117-->[:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:13:25-91
+118            </intent-filter>
+119        </receiver>
+120
+121        <activity
+121-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:74
+122            android:name="com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity"
+122-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-93
+123            android:exported="false"
+123-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+124            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+124-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-71
+125        <activity
+125-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:52
+126            android:name="com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity"
+126-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-93
+127            android:screenOrientation="portrait" />
+127-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-49
+128
+129        <provider
+129-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-21:20
+130            android:name="com.crazecoder.openfile.FileProvider"
+130-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-64
+131            android:authorities="com.example.new_3ala5er.fileProvider.com.crazecoder.openfile"
+131-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+132            android:exported="false"
+132-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+133            android:grantUriPermissions="true" >
+133-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+134            <meta-data
+134-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:53
+135                android:name="android.support.FILE_PROVIDER_PATHS"
+135-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+136                android:resource="@xml/filepaths" />
+136-->[:open_file] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-50
+137        </provider>
+138
+139        <uses-library
+139-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+140            android:name="androidx.window.extensions"
+140-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+141            android:required="false" />
+141-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+142        <uses-library
+142-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+143            android:name="androidx.window.sidecar"
+143-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+144            android:required="false" />
+144-->[androidx.window:window:1.0.0-beta04] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+145
+146        <activity
+146-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:27:9-44:20
+147            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+147-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:28:13-80
+148            android:excludeFromRecents="true"
+148-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:29:13-46
+149            android:exported="true"
+149-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:30:13-36
+150            android:launchMode="singleTask"
+150-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:31:13-44
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+151-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:32:13-72
+152            <intent-filter>
+152-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:33:13-43:29
+153                <action android:name="android.intent.action.VIEW" />
+153-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
+153-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
+154
+155                <category android:name="android.intent.category.DEFAULT" />
+155-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
+155-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
+156                <category android:name="android.intent.category.BROWSABLE" />
+156-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
+156-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
+157
+158                <data
+158-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+159                    android:host="firebase.auth"
+160                    android:path="/"
+161                    android:scheme="genericidp" />
+162            </intent-filter>
+163        </activity>
+164        <activity
+164-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:45:9-62:20
+165            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+165-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:46:13-79
+166            android:excludeFromRecents="true"
+166-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:47:13-46
+167            android:exported="true"
+167-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:48:13-36
+168            android:launchMode="singleTask"
+168-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:49:13-44
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+169-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:50:13-72
+170            <intent-filter>
+170-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:51:13-61:29
+171                <action android:name="android.intent.action.VIEW" />
+171-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:34:17-69
+171-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:34:25-66
+172
+173                <category android:name="android.intent.category.DEFAULT" />
+173-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:36:17-76
+173-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:36:27-73
+174                <category android:name="android.intent.category.BROWSABLE" />
+174-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:37:17-78
+174-->[com.google.firebase:firebase-auth:21.0.3] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0cd31a8007b82ec10dce55ca37be1d81/jetified-firebase-auth-21.0.3/AndroidManifest.xml:37:27-75
+175
+176                <data
+176-->[:file_picker] /Users/shady-jaradat/StudioProjects/project_DOG_father/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+177                    android:host="firebase.auth"
+178                    android:path="/"
+179                    android:scheme="recaptcha" />
+180            </intent-filter>
+181        </activity>
+182
+183        <provider
+183-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+184            android:name="com.google.firebase.provider.FirebaseInitProvider"
+184-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+185            android:authorities="com.example.new_3ala5er.firebaseinitprovider"
+185-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+186            android:directBootAware="true"
+186-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+187            android:exported="false"
+187-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+188            android:initOrder="100" />
+188-->[com.google.firebase:firebase-common:20.1.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+189
+190        <activity
+190-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:23:9-27:75
+191            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+191-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:24:13-93
+192            android:excludeFromRecents="true"
+192-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:25:13-46
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:26:13-37
+194            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+194-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:27:13-72
+195        <!--
+196            Service handling Google Sign-In user revocation. For apps that do not integrate with
+197            Google Sign-In, this service will never be started.
+198        -->
+199        <service
+199-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:33:9-37:51
+200            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+200-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:34:13-89
+201            android:exported="true"
+201-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:35:13-36
+202            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+202-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:36:13-107
+203            android:visibleToInstantApps="true" />
+203-->[com.google.android.gms:play-services-auth:20.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:37:13-48
+204
+205        <activity
+205-->[com.google.android.gms:play-services-base:18.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+206            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+206-->[com.google.android.gms:play-services-base:18.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-base:18.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+208-->[com.google.android.gms:play-services-base:18.0.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+209
+210        <meta-data
+210-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+211            android:name="com.google.android.gms.version"
+211-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+212            android:value="@integer/google_play_services_version" />
+212-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+213        <meta-data
+213-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:16:9-18:53
+214            android:name="com.huawei.hms.client.service.name:hianalytics"
+214-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:17:13-74
+215            android:value="hianalytics:5.1.0.301" />
+215-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:18:13-50
+216        <meta-data
+216-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:19:9-21:33
+217            android:name="com.huawei.hms.min_api_level:hianalytics:hianalytics"
+217-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:20:13-80
+218            android:value="1" />
+218-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:21:13-30
+219
+220        <receiver
+220-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:23:9-29:20
+221            android:name="com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver"
+221-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:24:13-87
+222            android:exported="false" >
+222-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:25:13-37
+223            <intent-filter>
+223-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:26:13-28:29
+224                <action android:name="com.huawei.hms.analytics.pps.event" />
+224-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:27:17-77
+224-->[com.huawei.hms:hianalytics:5.1.0.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/97014955501b9b229cd67d91622b7545/jetified-hianalytics-5.1.0.301/AndroidManifest.xml:27:25-74
+225            </intent-filter>
+226        </receiver>
+227
+228        <service
+228-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:15:9-21:19
+229            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+229-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:16:13-70
+230            android:exported="false" >
+230-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:17:13-37
+231            <meta-data
+231-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:18:13-20:78
+232                android:name="com.huawei.agconnect.credential.CredentialServiceRegistrar:500"
+232-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:19:17-94
+233                android:value="com.huawei.agconnect.core.ServiceRegistrar" />
+233-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:20:17-75
+234        </service>
+235
+236        <uses-library
+236-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:23:9-25:40
+237            android:name="org.apache.http.legacy"
+237-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:24:13-50
+238            android:required="false" />
+238-->[com.huawei.agconnect:agconnect-credential:1.4.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/50df5750c84c6eb53331b99be0a7cd50/jetified-agconnect-credential-1.4.0.300/AndroidManifest.xml:25:13-37
+239
+240        <meta-data
+240-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:14:9-16:40
+241            android:name="huawei_module_scankit_local"
+241-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:15:13-55
+242            android:value="10320300" />
+242-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:16:13-37
+243        <meta-data
+243-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:17:9-19:46
+244            android:name="huawei_module_scankit_sdk_version"
+244-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:18:13-61
+245            android:value="scan:2.1.0.300" />
+245-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:19:13-43
+246        <meta-data
+246-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:20:9-22:46
+247            android:name="com.huawei.hms.client.service.name:scan"
+247-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:21:13-67
+248            android:value="scan:2.1.0.300" />
+248-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:22:13-43
+249        <meta-data
+249-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:23:9-25:33
+250            android:name="com.huawei.hms.min_api_level:scan:huawei_module_scankit"
+250-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:24:13-83
+251            android:value="1" />
+251-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:25:13-30
+252        <meta-data
+252-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:26:9-28:33
+253            android:name="com.huawei.hms.min_api_level:scan:hmscore"
+253-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:27:13-69
+254            android:value="1" />
+254-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:28:13-30
+255
+256        <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity" />
+256-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:30:9-78
+256-->[com.huawei.hms:scan:2.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/AndroidManifest.xml:30:19-75
+257
+258        <provider
+258-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:10:9-14:39
+259            android:name="com.huawei.hms.aaid.InitProvider"
+259-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:11:13-60
+260            android:authorities="com.example.new_3ala5er.aaidinitprovider"
+260-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:12:13-68
+261            android:exported="false"
+261-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:13:13-37
+262            android:initOrder="500" />
+262-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:14:13-36
+263
+264        <meta-data
+264-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:16:9-18:52
+265            android:name="com.huawei.hms.client.service.name:opendevice"
+265-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:17:13-73
+266            android:value="opendevice:5.0.4.301" />
+266-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:18:13-49
+267        <meta-data
+267-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:19:9-21:33
+268            android:name="com.huawei.hms.min_api_level:opendevice:push"
+268-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:20:13-72
+269            android:value="1" />
+269-->[com.huawei.hms:opendevice:5.0.4.301] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/26ac0c4761099e4c44fe64b7c0810bbd/jetified-opendevice-5.0.4.301/AndroidManifest.xml:21:13-30
+270        <!--
+271        为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据，
+272        流水线打包时会替换成HMSVER对应的版本号，不要手动修改
+273        -->
+274        <meta-data
+274-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:18:9-20:46
+275            android:name="com.huawei.hms.client.service.name:base"
+275-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:19:13-67
+276            android:value="base:5.1.0.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+276-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:20:13-43
+277        <meta-data
+277-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:23:9-25:33
+278            android:name="com.huawei.hms.min_api_level:base:hmscore"
+278-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:24:13-69
+279            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+279-->[com.huawei.hms:base:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a89b2cd2e9dc709fa4185cb444aab658/jetified-base-5.1.0.300/AndroidManifest.xml:25:13-30
+280        <meta-data
+280-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:23:9-25:35
+281            android:name="availableLoaded"
+281-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:24:13-43
+282            android:value="yes" />
+282-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:25:13-32
+283
+284        <provider
+284-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:27:9-32:20
+285            android:name="com.huawei.hms.update.provider.UpdateProvider"
+285-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:28:13-73
+286            android:authorities="com.example.new_3ala5er.hms.update.provider"
+286-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:29:13-71
+287            android:exported="false"
+287-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:30:13-37
+288            android:grantUriPermissions="true" >
+288-->[com.huawei.hms:availableupdate:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/886cce58607ca144d2201115db052d24/jetified-availableupdate-5.1.0.300/AndroidManifest.xml:31:13-47
+289        </provider>
+290
+291        <activity
+291-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:21:9-29:20
+292            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+292-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:22:13-84
+293            android:configChanges="orientation|screenSize"
+293-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:23:13-59
+294            android:exported="false"
+294-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:24:13-37
+295            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+295-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:25:13-72
+296            <meta-data
+296-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:26:13-28:88
+297                android:name="hwc-theme"
+297-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:27:17-41
+298                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+298-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:28:17-85
+299        </activity>
+300        <activity
+300-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:30:9-38:20
+301            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+301-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:31:13-84
+302            android:configChanges="orientation|keyboardHidden|screenSize"
+302-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:32:13-74
+303            android:exported="false"
+303-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:33:13-37
+304            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+304-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:34:13-72
+305            <meta-data
+305-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:26:13-28:88
+306                android:name="hwc-theme"
+306-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:27:17-41
+307                android:value="androidhwext:style/Theme.Emui.Translucent" />
+307-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:28:17-85
+308        </activity>
+309
+310        <provider
+310-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:40:9-45:20
+311            android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+311-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:41:13-83
+312            android:authorities="com.example.new_3ala5er.updateSdk.fileProvider"
+312-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:42:13-74
+313            android:exported="false"
+313-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:43:13-37
+314            android:grantUriPermissions="true" >
+314-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:44:13-47
+315        </provider>
+316
+317        <meta-data
+317-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:12:9-14:54
+318            android:name="com.huawei.hms.client.service.name:dynamic-api"
+318-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:13:13-74
+319            android:value="dynamic-api:1.0.13.303" />
+319-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:14:13-51
+320        <meta-data
+320-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:15:9-17:33
+321            android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader"
+321-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:16:13-96
+322            android:value="2" />
+322-->[com.huawei.hms:dynamic-api:1.0.13.303] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3ea88b27631117660636515c1c8f7f57/jetified-dynamic-api-1.0.13.303/AndroidManifest.xml:17:13-30
+323
+324        <provider
+324-->[com.huawei.hms:ml-computer-sdkbase-inner:2.0.5.304] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/b969655a915f29b744cacb5711141f03/jetified-ml-computer-sdkbase-inner-2.0.5.304/AndroidManifest.xml:13:9-16:40
+325            android:name="com.huawei.hms.mlsdk.common.provider.MLInitializerProvider"
+325-->[com.huawei.hms:ml-computer-sdkbase-inner:2.0.5.304] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/b969655a915f29b744cacb5711141f03/jetified-ml-computer-sdkbase-inner-2.0.5.304/AndroidManifest.xml:14:13-86
+326            android:authorities="com.example.new_3ala5er.MLInitializerProvider"
+326-->[com.huawei.hms:ml-computer-sdkbase-inner:2.0.5.304] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/b969655a915f29b744cacb5711141f03/jetified-ml-computer-sdkbase-inner-2.0.5.304/AndroidManifest.xml:15:13-73
+327            android:exported="false" />
+327-->[com.huawei.hms:ml-computer-sdkbase-inner:2.0.5.304] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/b969655a915f29b744cacb5711141f03/jetified-ml-computer-sdkbase-inner-2.0.5.304/AndroidManifest.xml:16:13-37
+328        <provider
+328-->[com.huawei.agconnect:agconnect-core:1.4.2.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/8b9013912565d7601dc745513123a7f9/jetified-agconnect-core-1.4.2.300/AndroidManifest.xml:11:9-14:40
+329            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+329-->[com.huawei.agconnect:agconnect-core:1.4.2.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/8b9013912565d7601dc745513123a7f9/jetified-agconnect-core-1.4.2.300/AndroidManifest.xml:12:13-90
+330            android:authorities="com.example.new_3ala5er.AGCInitializeProvider"
+330-->[com.huawei.agconnect:agconnect-core:1.4.2.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/8b9013912565d7601dc745513123a7f9/jetified-agconnect-core-1.4.2.300/AndroidManifest.xml:13:13-73
+331            android:exported="false" />
+331-->[com.huawei.agconnect:agconnect-core:1.4.2.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/8b9013912565d7601dc745513123a7f9/jetified-agconnect-core-1.4.2.300/AndroidManifest.xml:14:13-37
+332
+333        <activity
+333-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:10:9-21:20
+334            android:name="com.huawei.hms.activity.BridgeActivity"
+334-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:11:13-66
+335            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+335-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:12:13-131
+336            android:excludeFromRecents="true"
+336-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:13:13-46
+337            android:exported="false"
+337-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:14:13-37
+338            android:hardwareAccelerated="true"
+338-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:15:13-47
+339            android:screenOrientation="behind"
+339-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:16:13-47
+340            android:theme="@android:style/Theme.Translucent" >
+340-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:17:13-61
+341            <meta-data
+341-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:26:13-28:88
+342                android:name="hwc-theme"
+342-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:27:17-41
+343                android:value="androidhwext:style/Theme.Emui.Translucent" />
+343-->[com.huawei.hms:update:2.0.7.302] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/682f2114151034d57b164ad66ce63b8a/jetified-update-2.0.7.302/AndroidManifest.xml:28:17-85
+344        </activity>
+345        <activity
+345-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:22:9-26:20
+346            android:name="com.huawei.hms.activity.EnableServiceActivity"
+346-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:23:13-73
+347            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+347-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:24:13-106
+348            android:exported="false" >
+348-->[com.huawei.hms:ui:5.1.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/2a8d0aaf68c8bd15934ba25aef636612/jetified-ui-5.1.0.300/AndroidManifest.xml:25:13-37
+349        </activity>
+350    </application>
+351
+352</manifest>

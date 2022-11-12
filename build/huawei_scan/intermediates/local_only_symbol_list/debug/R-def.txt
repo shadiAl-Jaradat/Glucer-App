@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+drawable back
+drawable colors
+drawable flashlight_off
+drawable flashlight_on
+drawable photo
+drawable scanningframe
+id back_img
+id flush_btn
+id img_btn
+id rim
+id scan_area
+id scan_result_view
+id surfaceView
+layout activity_defined
+layout activity_multiprocessor
+string scan_tip
+string title

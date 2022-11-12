@@ -1,0 +1,28 @@
+io/flutter/plugins/firebase/database/TransactionHandler.java
+ io.flutter.plugins.firebase.database.TransactionHandler
+io/flutter/plugins/firebase/database/ValueEventsProxy.java
+ io.flutter.plugins.firebase.database.ValueEventsProxy
+io/flutter/plugins/firebase/database/EventStreamHandler.java
+ io.flutter.plugins.firebase.database.EventStreamHandler
+ io.flutter.plugins.firebase.database.OnDispose
+io/flutter/plugins/firebase/database/QueryBuilder.java
+ io.flutter.plugins.firebase.database.QueryBuilder
+io/flutter/plugins/firebase/database/Constants.java
+ io.flutter.plugins.firebase.database.Constants
+io/flutter/plugins/firebase/database/BuildConfig.java
+ io.flutter.plugins.firebase.database.BuildConfig
+io/flutter/plugins/firebase/database/FlutterDataSnapshotPayload.java
+ io.flutter.plugins.firebase.database.FlutterDataSnapshotPayload
+io/flutter/plugins/firebase/database/FirebaseDatabasePlugin.java
+ io.flutter.plugins.firebase.database.FirebaseDatabasePlugin
+io/flutter/plugins/firebase/database/FlutterFirebaseAppRegistrar.java
+ io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
+io/flutter/plugins/firebase/database/ChildEventsProxy.java
+ io.flutter.plugins.firebase.database.ChildEventsProxy
+io/flutter/plugins/firebase/database/EventsProxy.java
+ io.flutter.plugins.firebase.database.EventsProxy
+io/flutter/plugins/firebase/database/TransactionExecutor.java
+ io.flutter.plugins.firebase.database.TransactionExecutor
+ io.flutter.plugins.firebase.database.TransactionExecutor$1
+io/flutter/plugins/firebase/database/FlutterFirebaseDatabaseException.java
+ io.flutter.plugins.firebase.database.FlutterFirebaseDatabaseException

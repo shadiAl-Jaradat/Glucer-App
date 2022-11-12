@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
+            "map": [
+                {
+                    "source": "/Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,165,226,292,369,424,483",
+                        "endColumns": "46,62,60,65,76,54,58,46",
+                        "endOffsets": "97,160,221,287,364,419,478,525"
+                    }
+                }
+            ]
+        }
+    ]
+}

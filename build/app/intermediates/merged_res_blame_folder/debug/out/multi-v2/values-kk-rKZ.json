@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
+            "map": [
+                {
+                    "source": "/Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/res/values-kk-rKZ/values-kk-rKZ.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,172,232,297,365,420,479",
+                        "endColumns": "46,69,59,64,67,54,58,51",
+                        "endOffsets": "97,167,227,292,360,415,474,526"
+                    }
+                }
+            ]
+        }
+    ]
+}

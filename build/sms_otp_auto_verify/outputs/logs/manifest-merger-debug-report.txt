@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:1:1-14:12
+	package
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:2:5-46
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:4:5-13:19
+receiver#com.oohyugi.sms_otp_auto_verify.SmsBroadcastReceiver
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:5:9-12:20
+	android:exported
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:7:13-36
+	android:permission
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:8:13-87
+	android:name
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:6:13-49
+intent-filter#action:name:com.google.android.gms.auth.api.phone.SMS_RETRIEVED
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:9:13-11:29
+action#com.google.android.gms.auth.api.phone.SMS_RETRIEVED
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:10:17-94
+	android:name
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml:10:25-91
+uses-sdk
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/android/src/main/AndroidManifest.xml

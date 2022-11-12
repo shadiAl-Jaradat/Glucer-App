@@ -1,0 +1,51 @@
+com/huawei/hms/flutter/scan/BuildConfig.java
+ com.huawei.hms.flutter.scan.BuildConfig
+com/huawei/hms/flutter/scan/multiprocessor/MultiProcessorHandler.java
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$1
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$2
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$3
+com/huawei/hms/flutter/scan/scanpermissions/PermissionMethodCallHandler.java
+ com.huawei.hms.flutter.scan.scanpermissions.PermissionMethodCallHandler
+com/huawei/hms/flutter/scan/customizedview/CustomizedViewMethodCallHandler.java
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewMethodCallHandler
+com/huawei/hms/flutter/scan/customizedview/RemoteViewHandler.java
+ com.huawei.hms.flutter.scan.customizedview.RemoteViewHandler
+com/huawei/hms/flutter/scan/scanutils/ScanUtilsMethodCallHandler.java
+ com.huawei.hms.flutter.scan.scanutils.ScanUtilsMethodCallHandler
+com/huawei/hms/flutter/scan/multiprocessor/ScanTextOptions.java
+ com.huawei.hms.flutter.scan.multiprocessor.ScanTextOptions
+com/huawei/hms/flutter/scan/ScanPlugin.java
+ com.huawei.hms.flutter.scan.ScanPlugin
+com/huawei/hms/flutter/scan/utils/Constants.java
+ com.huawei.hms.flutter.scan.utils.Constants
+com/huawei/hms/flutter/scan/utils/ValueGetter.java
+ com.huawei.hms.flutter.scan.utils.ValueGetter
+com/huawei/hms/flutter/scan/multiprocessor/MultiProcessorMethodCallHandler.java
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorMethodCallHandler
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorMethodCallHandler$1
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorMethodCallHandler$2
+com/huawei/hms/flutter/scan/multiprocessor/MultiProcessorActivity.java
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity$1
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity$2
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity$3
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity$4
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity$SurfaceCallBack
+com/huawei/hms/flutter/scan/utils/Errors.java
+ com.huawei.hms.flutter.scan.utils.Errors
+com/huawei/hms/flutter/scan/customizedview/CustomizedViewActivity.java
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity$1
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity$2
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity$3
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity$4
+ com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity$5
+com/huawei/hms/flutter/scan/logger/HMSLogger.java
+ com.huawei.hms.flutter.scan.logger.HMSLogger
+com/huawei/hms/flutter/scan/multiprocessor/MultiProcessorCamera.java
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorCamera
+ com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorCamera$FrameCallback
+com/huawei/hms/flutter/scan/multiprocessor/ScanResultView.java
+ com.huawei.hms.flutter.scan.multiprocessor.ScanResultView
+ com.huawei.hms.flutter.scan.multiprocessor.ScanResultView$HmsScanGraphic
