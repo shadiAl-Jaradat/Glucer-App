@@ -29,7 +29,7 @@ Sign UP Views:
 #### Frameworks
 
 - Flutter packages 
-- Firebase
+- Firebase ( Authentication using mobile number OTP code - FireStore - Storage ) 
 - Flutter Charts 
 - Sharedpreferences Flutter - (UserDefaults)
 
