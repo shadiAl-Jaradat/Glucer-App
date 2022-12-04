@@ -28,24 +28,21 @@ Sign UP Views:
 
 #### Frameworks
 
-- UIKit
+- Flutter packages 
 - Firebase
-- Charts
-- Core Animation
-- PDFKIT
-- Document Picker
-- UserDefaults
+- Flutter Charts 
+- Sharedpreferences Flutter - (UserDefaults)
 
 
 ## How To Use
 
-- Clone the project and run it on Xcode 12 or above
+- Clone the project and run it on android studio or VS code 
 
 ---
 
 ## Author Info
 
-- Twitter - [@othmansh0](https://twitter.com/othmansh0)
-- Website - [LinkedIn: shadi Al-jaradat](www.linkedin.com/in/shadi-al-jaradat)
+- Twitter - [@ShadiAljaradat](https://twitter.com/ShadiAljaradat?t=olqOi25Tvlq-Gy1j84xEKA&s=08)
+- Website - [LinkedIn: shadi Al-jaradat](https://www.linkedin.com/in/shadi-al-jaradat/)
 
 [Back To The Top](#Diabetes-App)
