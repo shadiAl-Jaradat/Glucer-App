@@ -1,36 +1,51 @@
 # Diabetes App
 
-## Getting Started
+### Screen Shots
+Patient App:
+<img src="Patient Views.png" width="900">
+Doctor App:
+<img src="Doctor Views.png" width="900">
+Sign UP Views:
+<img src="Sign UP Views 2.png" width="900">
 
-### splashScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491049-015c8ddc-c0b5-47c1-ae09-5d7c40c6888c.jpeg" width=25% height=25%>
+---
+
+### Table of Contents
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
+
+---
+
+## Description
+
+- A simple tracking app for diabetic patients connecting them with their doctors.
+- Readings entered by patients are archived week by week.
+- A chart is created based on readings of each week.
+- Patients can share their medical analysis with their doctors as PDF files.
+- Patients and doctors can sign up via phone number.
+
+#### Frameworks
+
+- UIKit
+- Firebase
+- Charts
+- Core Animation
+- PDFKIT
+- Document Picker
+- UserDefaults
 
 
-### homeScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491055-cd8ed1b1-85f4-4fca-a925-4761648471ae.jpeg" width=25% height=25%>
+## How To Use
 
-### OtpCodeScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491056-9055a670-6ec3-4ab6-9c4d-fe4bddbf1660.jpeg" width=25% height=25%>
+- Clone the project and run it on Xcode 12 or above
 
-### registrationScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491059-7b9e569b-f952-44b7-a089-50f1afefa5af.jpeg" width=25% height=25%>
+---
 
+## Author Info
 
-## patient views
+- Twitter - [@othmansh0](https://twitter.com/othmansh0)
+- Website - [LinkedIn: Othman Shahrouri](https://linkedin.com/in/othmanshahrouri)
 
-### AddReading
-<img src="https://user-images.githubusercontent.com/94618324/201491065-7dea8a9c-879a-467e-87f3-3426e4fe9f38.jpeg" width=25% height=25%>
-
-### ReadingsScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491068-9e1c2e99-6a93-4f98-9f0d-e06800623721.jpeg" width=25% height=25%>
-
-### ChartScreen
-<img src="https://user-images.githubusercontent.com/94618324/201491070-6f1e2c36-ae53-4411-b8a2-8d2995a0e74e.jpeg" width=25% height=25%>
-
-
-
-
-## Doctor views
-
-https://user-images.githubusercontent.com/94618324/201491073-791181ee-605e-4751-b4ca-f548c954c9c8.mp4
-
+[Back To The Top](#Diabetes-App)
