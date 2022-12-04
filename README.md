@@ -46,6 +46,6 @@ Sign UP Views:
 ## Author Info
 
 - Twitter - [@othmansh0](https://twitter.com/othmansh0)
-- Website - [LinkedIn: Othman Shahrouri](https://linkedin.com/in/othmanshahrouri)
+- Website - [LinkedIn: shadi Al-jaradat](www.linkedin.com/in/shadi-al-jaradat)
 
 [Back To The Top](#Diabetes-App)
