@@ -1,45 +1,45 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:1:1-10:12
 	package
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:2:3-40
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:2:3-40
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:3:5-79
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:3:5-79
 	android:name
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:3:22-76
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:3:22-76
 application
-ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:4:5-9:19
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:4:5-9:19
 activity#com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity
-ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:5:9-7:43
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:5:9-7:43
 	android:exported
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:7:17-41
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:7:17-41
 	android:theme
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:6:17-75
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:6:17-75
 	android:name
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:5:19-99
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:5:19-99
 activity#com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity
-ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:9-139
+ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:9-139
 	android:screenOrientation
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:100-136
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:100-136
 	android:name
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:19-99
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:19-99
 uses-sdk
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+		ADDED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml

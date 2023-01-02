@@ -87,13 +87,16 @@ class FirebaseServiceDoctor {
       'National ID': nationalNumberPatient,
       'Diabetes Type': type_Di,
       'User': uid,
+      'history': "",
+      'isHaveNewRead':false,
+      'lastRead': 0,
     });
 
     createNewWeek();
   }
 
   void createNewWeek() async {
-    (await patient()).set({
+    (await patientReadings()).set({
       'BeforeReadings': [],
       'BeforeReadingsDateArabic': [],
       'Days_English_before': [],
@@ -122,7 +125,7 @@ class FirebaseServiceDoctor {
     });
   }
 
-  Future<DocumentReference<Object?>> patient() async {
+  Future<DocumentReference<Object?>> patientReadings() async {
     return await FirebaseFirestore.instance
         .collection('/doctors')
         .doc(UserSimplePreferencesDoctorID.getDrID() ?? doctorId)
@@ -132,53 +135,131 @@ class FirebaseServiceDoctor {
         .doc(UserSimplePreferencesUser.getCtOfWeek());
   }
 
+  Future<DocumentReference<Object?>> patientUpdates() async {
+    return await FirebaseFirestore.instance
+        .collection('/doctors')
+        .doc(UserSimplePreferencesDoctorID.getDrID() ?? doctorId)
+        .collection('/patient')
+        .doc(UserSimplePreferencesUser.getUserID() ?? uid);
+  }
+
   void writeReadingsBefore(
-      double readings,
-      String arabicDay,
-      String period,
-      String wa2t,
-      String englishTime,
-      List<dynamic> oldReadings,
-      List<dynamic> oldDays,
-      DateTime dateTime) async {
+      {
+        required double newRead,
+        required String arabicDay,
+        required String period,
+        required String wa2t,
+        required String englishTime,
+
+        required List<dynamic> oldReadings,
+        required List<dynamic> oldDays,
+        required List<dynamic> oldBeforeDateTime,
+        required List<dynamic> oldBeforeReadingsDateArabic,
+
+        required DateTime dateTime
+      }) async {
+
     List<dynamic> before = oldReadings;
     List<dynamic> daysBefore = oldDays;
 
-    before.add(readings);
+    List<dynamic> beforeReadingsDateArabicList = oldBeforeReadingsDateArabic;
+    List<dynamic> beforeDateTimeList = oldBeforeDateTime;
+
+    before.add(newRead);
     daysBefore.add(englishTime);
-    (await patient()).set({
+    beforeReadingsDateArabicList.add("$arabicDay $period $wa2t");
+    beforeDateTimeList.add(dateTime);
+
+
+    (await patientReadings()).set({
       'BeforeReadings': before,
       'Days_English_before': daysBefore,
-      'BeforeReadingsDateArabic':
-          FieldValue.arrayUnion([arabicDay + period + wa2t]),
-      'BeforeDateTime': [dateTime.toString()],
+      'BeforeReadingsDateArabic': beforeReadingsDateArabicList,
+      'BeforeDateTime': beforeDateTimeList,
+    }, SetOptions(merge: true));
+
+
+    (await  patientUpdates()).set({
+      'isHaveNewRead' : true,
+      'lastRead' : newRead,
+    }, SetOptions(merge: true));
+
+  }
+  void makePatientHasNewReadFalse({
+    required String userID,
+  }) async{
+
+    (
+        FirebaseFirestore.instance
+            .collection('/doctors')
+            .doc(UserSimplePreferencesDoctorID.getDrID())
+            .collection('/patient')
+            .doc(userID)
+    ).set({
+      'isHaveNewRead' : false,
+    }, SetOptions(merge: true));
+  }
+
+  void updateHistoryOfPatient({
+    required String userID,
+    required String newHistory,
+  }) async{
+
+    (
+        FirebaseFirestore.instance
+            .collection('/doctors')
+            .doc(UserSimplePreferencesDoctorID.getDrID())
+            .collection('/patient')
+            .doc(userID)
+    ).set({
+      'history' : newHistory,
     }, SetOptions(merge: true));
   }
 
   void writeReadingsAfter(
-      double readings,
-      String arabicDay,
-      String period,
-      String wa2t,
-      String englishTime,
-      List<dynamic> oldReadings,
-      List<dynamic> oldDays,
-      DateTime dateTime) async {
+      {
+        required double newRead,
+        required String arabicDay,
+        required String period,
+        required String wa2t,
+        required String englishDay,
+        required List<dynamic> oldReadings,
+        required List<dynamic> oldDays,
+        required DateTime dateTime,
+        required List<dynamic> oldAfterDateTime,
+        required List<dynamic> oldAfterReadingsDateArabic,
+
+      }) async {
+
     List<dynamic> after = oldReadings;
     List<dynamic> daysAfter = oldDays;
+    List<dynamic> afterDateTimeList = oldAfterDateTime;
+    List<dynamic> afterReadingsDateArabicList = oldAfterReadingsDateArabic;
 
-    after.add(readings);
-    daysAfter.add(englishTime);
+    after.add(newRead);
+    daysAfter.add(englishDay);
+    afterDateTimeList.add(dateTime);
+    afterReadingsDateArabicList.add("$arabicDay $period $wa2t");
 
-    (await patient()).set({
+    (await patientReadings()).set({
       'AfterReadings': after,
       'Days_English_after': daysAfter,
-      'AfterReadingsDateArabic':
-          FieldValue.arrayUnion([arabicDay + period + wa2t]),
-      'AfterDateTime': [dateTime.toString()],
+      'AfterReadingsDateArabic': afterReadingsDateArabicList,
+      'AfterDateTime': afterDateTimeList,
     }, SetOptions(merge: true));
+
+
+    (await  patientUpdates()).set({
+      'isHaveNewRead' : true,
+      'lastRead' : newRead,
+    }, SetOptions(merge: true));
+
   }
 }
+
+
+
+
 
 class UserSimplePreferencesUser {
   static late SharedPreferences _preferences;

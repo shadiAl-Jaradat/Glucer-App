@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:new_3ala5er/core/screens/patient/CHART_PAGES/toggle.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
@@ -30,12 +31,12 @@ class ChartData {
   final double y;
 }
 
-class chart extends StatefulWidget {
+class ChartLabsPage extends StatefulWidget {
   @override
-  _chartState createState() => _chartState();
+  _ChartLabsPageState createState() => _ChartLabsPageState();
 }
 
-class _chartState extends State<chart> {
+class _ChartLabsPageState extends State<ChartLabsPage> {
   late File? file;
 
   late TooltipBehavior _tooltipBehavior;
@@ -96,8 +97,13 @@ class _chartState extends State<chart> {
   // }
 
   @override
-  void initState() {
+  void initState() async {
     _tooltipBehavior = TooltipBehavior(enable: true);
+    listOfLabs = await getFilesList();
+    for(int index =0 ; index< listOfLabs.length ; index++){
+      _cardListFiles.add(createCardFile(listOfLabs[index] as PlatformFile ));
+    }
+
     _Call_list_files();
     super.initState();
   }
@@ -108,16 +114,19 @@ class _chartState extends State<chart> {
     }
 
     firebase_storage.UploadTask uploadTask;
-    //Create a Reference to the file
+
     firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance
         .ref()
         .child('Patients_labs')
         .child('/'+UserSimplePreferencesUser.getUserID().toString())
-        .child('/' + file.path);
+        .child('/' + file.path.split('/').last);
+
 
     final metadata = firebase_storage.SettableMetadata(
         contentType: 'patient/pdf',
-        customMetadata: {'picked-file-path': file.path});
+        customMetadata: {'picked-file-path': file.path}
+    );
+
     print("Uploading..!");
 
     uploadTask = ref.putData(await file.readAsBytes(), metadata);
@@ -125,6 +134,31 @@ class _chartState extends State<chart> {
     print("done..!");
     return Future.value(uploadTask);
   }
+
+
+  ///***********************************************
+
+  Future<List<String>> getFilesList() async {
+
+    List<String> filePaths = [];
+    Reference storageRef = FirebaseStorage.instance.ref()
+        .child('Patients_labs')
+        .child('/'+UserSimplePreferencesUser.getUserID().toString());
+
+    dynamic listOfFiles = await storageRef.listAll();
+
+    for (var file in listOfFiles.items) {
+      String downloadURL = await file.getDownloadURL();
+      filePaths.add(downloadURL);
+    }
+
+    print(filePaths);
+
+    return filePaths;
+  }
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -313,13 +347,12 @@ class _chartState extends State<chart> {
                                             onPressed: () async {
                                               final result = await FilePicker.platform.pickFiles();
                                               if (result == null) return;
-                                              final path =
-                                                  result.files.single.path!;
+                                              final path = result.files.single.path!;
                                               setState(() => file = File(path));
                                               uploadFile(file!);
                                               final ff = result.files.first;
                                               //Path pp = ff.path as Path;
-                                              _cardList_files.add(creat_card_file(ff));
+                                              _cardListFiles.add(createCardFile(ff));
                                             },
                                             //icon: Icon(Icons.add),
                                             child: Icon(Icons.add),
@@ -374,13 +407,13 @@ class _chartState extends State<chart> {
     );
   }
 
-  List<Widget> _cardList_files = [];
-
+  List<Widget> _cardListFiles = [];
+  List<String> listOfLabs = [];
   List<Widget> _Call_list_files() {
-    return _cardList_files;
+    return _cardListFiles;
   }
 
-  Widget creat_card_file(PlatformFile Plt_file) {
+  Widget createCardFile(PlatformFile Plt_file) {
     String? ext = Plt_file.extension;
 
     return InkWell(
@@ -420,7 +453,7 @@ class _chartState extends State<chart> {
                   child: Padding(
                     padding: const EdgeInsets.only(top: 3.0),
                     child: Text(
-                      'نتيحة المختبر \n الاول',
+                      'نتيحة المختبر ',
                       style: TextStyle(
                           color: Color.fromRGBO(91, 122, 129, 1), fontSize: 10),
                       textAlign: TextAlign.center,

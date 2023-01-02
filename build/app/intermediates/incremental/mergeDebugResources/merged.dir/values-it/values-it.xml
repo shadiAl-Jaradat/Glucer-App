@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Apri sul telefono</string>
     <string name="common_signin_button_text">Accedi</string>
     <string name="common_signin_button_text_long">Accedi con Google</string>
-    <string name="hms_abort" priority="translator">"Interrompi"</string>
-    <string name="hms_abort_message" priority="translator">"Vuoi interrompere il download?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s non può utilizzare HMS Core. Avvia Optimizer o accedi a Impostazioni, attiva tutte le autorizzazioni per %2$s (incluso l\'avvio automatico e l\'avvio secondario) e riprova."</string>
-    <string name="hms_cancel" priority="translator">"Annulla"</string>
-    <string name="hms_check_failure" priority="translator">"Ricerca aggiornamenti non riuscita."</string>
-    <string name="hms_checking" priority="translator">"Ricerca aggiornamenti..."</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Impossibile scaricare il pacchetto HMS Core."</string>
-    <string name="hms_download_no_space" priority="translator">"Spazio insufficiente. Impossibile completare il download."</string>
-    <string name="hms_download_retry" priority="translator">"Download non riuscito. Vuoi riprovare?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Download"</string>
-    <string name="hms_install" priority="translator">"Installa"</string>
-    <string name="hms_install_message" priority="translator">"Per l\'utilizzo della funzione occorre installare HMS Core. Vuoi installare?"</string>
-    <string name="hms_retry" priority="translator">"Riprova"</string>
-    <string name="hms_update" priority="translator">"Aggiorna"</string>
-    <string name="hms_update_continue" priority="LT">"Scarica"</string>
-    <string name="hms_update_message" priority="translator">"Aggiorna HMS Core all\'ultima versione per utilizzare questa funzione. Vuoi aggiornare ora?"</string>
-    <string name="hms_update_message_new" priority="LT">"Il servizio richiede l\'ultima versione della seguente app:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="translator">"Nessuna connessione Wi-Fi. Scaricare usando i dati mobili?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiato negli appunti"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copia link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Apri nel browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Condividi link"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Tocca per attivare il flash</string>
     <string name="scankit_light_off">Spegni</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Scansiona</string>
+    <string name="scankit_title_all" priority="translator">"Scansiona il codice QR/codice a barre"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Allinea il codice QR/codice a barre qui di seguito"</string>
+    <string name="scankit_title_qr" priority="translator">"Scansiona il codice QR"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Allinea il codice QR qui di seguito"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Cerca"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Download AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Installa"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Download %s…"</string>
-    <string name="upsdk_app_size" priority="LT">"Dimensioni"</string>
-    <string name="upsdk_app_version" priority="translator">"Versione"</string>
-    <string name="upsdk_appstore_install" priority="translator">"%s è richiesto per aggiornare questa app. Vuoi installare adesso?"</string>
-    <string name="upsdk_cancel" priority="translator">"Annulla"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Ricerca aggiornamenti…"</string>
-    <string name="upsdk_choice_update" priority="LT">"Aggiornamento disponibile. Scarica e installa la versione più recente."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Impossibile connettersi al server. Riprova in seguito."</string>
-    <string name="upsdk_detail" priority="LT">"Dettagli"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Recupero dati non riuscito. Riprova in seguito."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Nessuna connessione Internet. Verifica le impostazioni di rete."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"App"</string>
-    <string name="upsdk_ota_cancel" priority="LT">"In seguito"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Esci"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="LT">"Aggiorna"</string>
-    <string name="upsdk_ota_title" priority="LT">"Nuova versione"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Vuoi annullare l\'installazione?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Installazione non riuscita."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Sì"</string>
-    <string name="upsdk_update_check_no_new_version" priority="Reviewed">"La versione più aggiornata è già in uso."</string>
 </resources>

@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Buka di ponsel</string>
     <string name="common_signin_button_text">Login</string>
     <string name="common_signin_button_text_long">Login dengan Google</string>
-    <string name="hms_abort" priority="translator">"Hentikan"</string>
-    <string name="hms_abort_message" priority="translator">"Hentikan pengunduhan?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s tidak dapat menggunakan HMS Core. Luncurkan Pengoptimal (Pengelola Telepon) atau buka Pengaturan, aktifkan semua izin untuk %2$s (termasuk peluncuran otomatis dan peluncuran sekunder), dan coba lagi."</string>
-    <string name="hms_cancel" priority="translator">"Batal"</string>
-    <string name="hms_check_failure" priority="translator">"Gagal memeriksa pembaruan."</string>
-    <string name="hms_checking" priority="translator">"Memeriksa pembaruan..."</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Gagal mengunduh paket HMS Core."</string>
-    <string name="hms_download_no_space" priority="translator">"Ruang kosong tidak cukup. Pengunduhan tidak dapat diselesaikan."</string>
-    <string name="hms_download_retry" priority="translator">"Pengunduhan gagal. Coba lagi?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Mengunduh"</string>
-    <string name="hms_install" priority="translator">"Pasang"</string>
-    <string name="hms_install_message" priority="translator">"HMS Core harus dipasang untuk dapat menggunakan fitur ini. Pasang?"</string>
-    <string name="hms_retry" priority="translator">"Coba lagi"</string>
-    <string name="hms_update" priority="translator">"Perbarui"</string>
-    <string name="hms_update_continue" priority="LT">"Unduh"</string>
-    <string name="hms_update_message" priority="translator">"Perbarui ke versi terbaru HMS Core untuk menggunakan fitur ini. Perbarui sekarang?"</string>
-    <string name="hms_update_message_new" priority="LT">"Layanan ini memerlukan versi terbaru dari aplikasi berikut ini:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"Tidak ada koneksi Wi-Fi. Unduh menggunakan data seluler?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link disalin ke papan klip"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Salin link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Buka di browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Bagikan link"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Sentuh untuk menambah cahaya</string>
     <string name="scankit_light_off">Matikan cahaya</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Pindai</string>
+    <string name="scankit_title_all" priority="translator">"Pindai kode QR/kode batang"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Sejajarkan kode QR/kode batang di bawah ini"</string>
+    <string name="scankit_title_qr" priority="translator">"Pindai kode QR"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Sejajarkan kode QR di bawah ini"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Mengunduh AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Pasang"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Mengunduh %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Ukuran"</string>
-    <string name="upsdk_app_version" priority="translator">"Versi"</string>
-    <string name="upsdk_appstore_install" priority="translator">"%s diperlukan untuk memperbarui aplikasi ini. Pasang sekarang?"</string>
-    <string name="upsdk_cancel" priority="translator">"Batal"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Memeriksa pembaruan..."</string>
-    <string name="upsdk_choice_update" priority="LT">"Pembaruan tersedia. Unduh dan pasang versi terbaru."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Tidak dapat terhubung ke server. Coba lagi nanti."</string>
-    <string name="upsdk_detail" priority="translator">"Perincian"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Tidak dapat mengambil data. Coba lagi nanti."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Tidak ada koneksi Internet. Periksa pengaturan jaringan Anda."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"Apl"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Nanti"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Keluar"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Perbarui"</string>
-    <string name="upsdk_ota_title" priority="translator">"Versi baru"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Batalkan instalasi?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Instalasi gagal."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Ya"</string>
-    <string name="upsdk_update_check_no_new_version" priority="Reviewed">"Versi Anda sudah yang terbaru."</string>
 </resources>

@@ -49,8 +49,12 @@ class _listOfPatientState extends State<listOfPatient> {
   // final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   late List<String> listOfName = [];
   late List<String> listOfIDs = [];
-  late List<String> listOfLastReading = [];
+  late List<double> listOfLastReading = [];
+  late List<bool> listOfIsHaveNewRead = [];
+  late List<String> listOfHistories = [];
+
   String searchString = "";
+
   @override
   void initState() {
     super.initState();
@@ -61,31 +65,44 @@ class _listOfPatientState extends State<listOfPatient> {
       listOfLastReading.clear();
       for(int i=0;i<x.length;i++){
         final user = x[i].data();
-        listOfName.add(user['Name'].toString());
-        listOfIDs.add(user['User'].toString());
+        setState(() {
+          listOfName.add(user['Name'].toString());
+          listOfIDs.add(user['User'].toString());
+          listOfLastReading.add(user['lastRead']);
+          listOfIsHaveNewRead.add(user['isHaveNewRead']);
+          listOfHistories.add(user['history']);
+        });
         Future<QuerySnapshot<Map<String, dynamic>>> re = FirebaseFirestore.instance.collection('/doctors')
             .doc(UserSimplePreferencesDoctorID.getDrID()).collection('/patient')
             .doc(user['User'].toString()).collection('/weeks').get();
         re.then((value) {
           var y = value.docs;
-          List<dynamic> listRA = y.last.data()['BeforeReadings'];
-          List<dynamic> listRB = y.last.data()['AfterReadings'];
-          if(listRA.isEmpty && listRB.isEmpty){
-            listOfLastReading.add('no');
-          }
-          else if(listRA.isEmpty && listRB.isNotEmpty){
-            dynamic lastRB = listRB[listRB.length-1];
-            listOfLastReading.add(lastRB.toString());
-          }
-          else if(listRB.isEmpty && listRA.isNotEmpty){
-            dynamic lastRA = listRA[listRA.length-1];
-            listOfLastReading.add(lastRA.toString());
-          }
-          else {
-            dynamic lastRA = listRA[listRA.length-1];
-            dynamic lastRB = listRB[listRB.length-1];
-            listOfLastReading.add(lastRB > lastRA ? lastRB.toString() : lastRA.toString());
-          }
+          // List<dynamic> listRA = y.last.data()['BeforeReadings'];
+          // List<dynamic> listRB = y.last.data()['AfterReadings'];
+          // if(listRA.isEmpty && listRB.isEmpty){
+          //   setState(() {
+          //     listOfLastReading.add('no');
+          //   });
+          // }
+          // else if(listRA.isEmpty && listRB.isNotEmpty){
+          //   setState(() {
+          //     dynamic lastRB = listRB[listRB.length-1];
+          //     listOfLastReading.add(lastRB.toString());
+          //   });
+          // }
+          // else if(listRB.isEmpty && listRA.isNotEmpty){
+          //   setState(() {
+          //     dynamic lastRA = listRA[listRA.length-1];
+          //     listOfLastReading.add(lastRA.toString());
+          //   });
+          // }
+          // else {
+          //   setState(() {
+          //     dynamic lastRA = listRA[listRA.length-1];
+          //     dynamic lastRB = listRB[listRB.length-1];
+          //     listOfLastReading.add(lastRB > lastRA ? lastRB.toString() : lastRA.toString());
+          //   });
+          // }
         });
       }
     });
@@ -248,7 +265,7 @@ class _listOfPatientState extends State<listOfPatient> {
                       });
                     },
                     decoration: InputDecoration(
-                      labelText: 'Search',
+                      labelText: 'بحث',
                       suffixIcon: Icon(Icons.search),
                     ),
                   ),
@@ -286,7 +303,13 @@ class _listOfPatientState extends State<listOfPatient> {
                   itemBuilder: (context,index){
                     print("ana hon");
                     return listOfName[index].contains(searchString)?
-                    PatientCard(name: listOfName[index] , id: listOfIDs[index],lastRead: listOfLastReading.isEmpty ? 'no': listOfLastReading[index].toString(),)
+                    PatientCard(
+                      name: listOfName[index] ,
+                      id: listOfIDs[index],
+                      lastRead: listOfLastReading[index],
+                      isHaveNewRead: listOfIsHaveNewRead[index],
+                      history: listOfHistories[index],
+                    )
                         : Container();
                   }
               ),
@@ -299,24 +322,30 @@ class _listOfPatientState extends State<listOfPatient> {
   }
 }
 
-
+FirebaseServiceDoctor doctor = FirebaseServiceDoctor();
 class PatientCard extends StatelessWidget {
   final String name;
   final String id;
-  final String lastRead;
+  final double lastRead;
+  final bool isHaveNewRead;
+  final String history;
   const PatientCard({
     required this.name,
     required this.id,
     required this.lastRead,
+    required this.isHaveNewRead,
+    required this.history,
     Key? key,
   }) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
-    print("esmaaaaa3 " + name +'  ' + id  + '   '+ lastRead);
+    print("esmaaaaa3 " + name +'  ' + id  + ' '+ lastRead.toString());
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Details(idPa: id,namePa: name,)));
+        doctor.makePatientHasNewReadFalse(userID: id);
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Details(idPa: id,namePa: name,history: history,)));
       },
       child: Card(
         margin: EdgeInsets.only(bottom: 12),
@@ -324,6 +353,7 @@ class PatientCard extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            isHaveNewRead == true ?
             Padding(
               padding: const EdgeInsets.all(40),
               child: Container(
@@ -331,9 +361,24 @@ class PatientCard extends StatelessWidget {
                 height: 11,
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromRGBO(212, 240, 222, 0.53)),
+                     color: Color.fromRGBO(212, 240, 222, 0.90)
+                  //color: Colors.amber,
+                ),
+              ),
+            )
+            :Padding(
+              padding: const EdgeInsets.all(40),
+              child: Container(
+                width: 11,
+                height: 11,
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromRGBO(212, 240, 222, 0)
+                  //color: Colors.amber,
+                ),
               ),
             ),
+
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -344,9 +389,9 @@ class PatientCard extends StatelessWidget {
                 ),
                 //TODO automate from readings
                 Text(
-                    lastRead == 'no' ? '' :
-                    (double.parse(lastRead) >= 130.0 ? 'مرتفع'
-                        : double.parse(lastRead) <= 80.0 ? 'منخفض' : 'طبيعي'),
+                    lastRead == 0 ? '' :
+                    (lastRead >= 130.0 ? 'مرتفع'
+                        : lastRead <= 80.0 ? 'منخفض' : 'طبيعي'),
                   style: TextStyle(
                       color: Color.fromRGBO(135, 165, 171, 0.63), fontSize: 13),
                 ),
@@ -362,9 +407,9 @@ class PatientCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: lastRead == 'no' ? null :
-                  (double.parse(lastRead) >= 130.0 ?  Colors.red
-                      : double.parse(lastRead) <= 80.0 ? Colors.red : Colors.green),
+                  color: lastRead == 0 ? null :
+                  (lastRead >= 130.0 ?  Colors.red
+                      : lastRead <= 80.0 ? Colors.red : Colors.green),
                 ),
               ),
             ),

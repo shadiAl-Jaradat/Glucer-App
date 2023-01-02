@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "401952173198",
+    "firebase_url": "https://doctorpatient-e9521-default-rtdb.firebaseio.com",
     "project_id": "doctorpatient-e9521",
     "storage_bucket": "doctorpatient-e9521.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "401952173198-sgvfr5csfi4hnp8q045fmvl0lu6hmrsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.new_3ala5er",
+            "certificate_hash": "0ccc02b2f0e8aaeb53751281673d2a44502a390f"
+          }
+        },
         {
           "client_id": "401952173198-geoo6fl5ncm2l1jta74n8nkrj0n19l3l.apps.googleusercontent.com",
           "client_type": 3

@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:pinput/pinput.dart';
 import '../doctor/regestrationDrPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:pinput/pin_put/pin_put.dart';
 import '../patient/patient_page.dart';
 import '../doctor/regestrationDrPage.dart';
 import '../usertype.dart';
@@ -32,10 +32,67 @@ class _OTPScreenState extends State<OTPScreen> {
   }
   //bool get cho => cho;
 
+
+
+  @override
+  void initState() {
+    _verifyPhone();
+    super.initState();
+  }
+
+  _verifyPhone() async {
+
+    FirebaseAuth _auth = FirebaseAuth.instance;
+
+    await _auth.verifyPhoneNumber(
+        phoneNumber: '+962${widget.phone}',
+        timeout: Duration(seconds: 60),
+        verificationCompleted: (PhoneAuthCredential credential) async {
+          print("Verified");
+        },
+        verificationFailed: (FirebaseAuthException e) {
+          print(e.message);
+        },
+        codeSent: (String verificationID, [int? resendToken]) {
+          setState(() {
+            _verificationCode = verificationID;
+          });
+        },
+        codeAutoRetrievalTimeout: (String verificationID) {
+          setState(() {
+            _verificationCode = verificationID;
+          });
+        },
+    );
+
+    // await FirebaseAuth.instance.verifyPhoneNumber(
+    //     phoneNumber: '+962${widget.phone}',
+    //     verificationCompleted: (PhoneAuthCredential credential) async {
+    //       print("Verified");
+    //     },
+    //     verificationFailed: (FirebaseAuthException e) {
+    //       print(e.message);
+    //     },
+    //     codeSent: (String verficationID, [int? resendToken]) {
+    //       setState(() {
+    //         _verificationCode = verficationID;
+    //       });
+    //     },
+    //     codeAutoRetrievalTimeout: (String verificationID) {
+    //       setState(() {
+    //         _verificationCode = verificationID;
+    //       });
+    //     },
+    //     timeout: Duration(milliseconds: 200000));
+  }
+
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(189, 208, 201, 1),
+      ),
       resizeToAvoidBottomInset: false,
       body: Container(
         height: double.infinity,
@@ -125,39 +182,99 @@ class _OTPScreenState extends State<OTPScreen> {
                         ),
                       ),
                     ),
+
+
                     SizedBox(
                       height: 20,
                     ),
+
+
                     Padding(
                       padding: EdgeInsets.all(30.0),
-                      child: PinPut(
-                        onTap: () => setState(() {
-                          selected = true;
-                        }),
-                        onEditingComplete: () => setState(() {
-                          selected = false;
-                          FocusScope.of(context).requestFocus(new FocusNode());
-                        }),
-
-                        useNativeKeyboard: true,
-                        autovalidateMode: AutovalidateMode.always,
-                        withCursor: true,
-                        fieldsCount: 6,
-                        textStyle: TextStyle(
-                            fontSize: 25.0, color: Color.fromRGBO(52, 91, 99, 1)),
-                        eachFieldWidth: 50.0,
-                        eachFieldHeight: 70.0,
-                        focusNode: _pinPutFocusNode,
+                      // child: Pinput(
+                      //     onTap: () => setState(() {
+                      //       selected = true;
+                      //     }),
+                      //
+                      //     onCompleted: (pin){
+                      //       setState(() {
+                      //         selected = false;
+                      //         FocusScope.of(context).requestFocus(new FocusNode());
+                      //       });
+                      //     },
+                      //
+                      //   defaultPinTheme : PinTheme(
+                      //     width: 56,
+                      //     height: 70,
+                      //     textStyle: TextStyle(fontSize: 25, color: Color.fromRGBO(52, 91, 99, 1), fontWeight: FontWeight.w600),
+                      //     decoration: BoxDecoration(
+                      //       border: Border.all(color: Color.fromRGBO(234, 239, 243, 1)),
+                      //       borderRadius: BorderRadius.circular(20),
+                      //     ),
+                      //   ),
+                      //
+                      //   // onEditingComplete: () => setState(() {
+                      //   //   selected = false;
+                      //   //   FocusScope.of(context).requestFocus(new FocusNode());
+                      //   // }),
+                      //
+                      //   useNativeKeyboard: true,
+                      //   validator: (value) {
+                      //     if(value!.length < 6){
+                      //       return "length less than 6";
+                      //     }
+                      //     return null;
+                      //   },
+                      //
+                      //   pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
+                      //   //autovalidateMode: AutovalidateMode.always,
+                      //
+                      //   //withCursor: true,
+                      //
+                      //   //fieldsCount: 6,
+                      //   length: 6,
+                      //
+                      //   //textStyle: TextStyle(fontSize: 25.0, color: Color.fromRGBO(52, 91, 99, 1)),
+                      //
+                      //   // eachFieldWidth: 50.0,
+                      //   // eachFieldHeight: 70.0,
+                      //   focusNode: _pinPutFocusNode,
+                      //   controller: _pinPutController,
+                      //
+                      //   submittedPinTheme: PinTheme(
+                      //     decoration: BoxDecoration(
+                      //       color: Color.fromRGBO(196, 196, 196, 0.26),
+                      //       borderRadius: BorderRadius.circular(15.0),
+                      //     ),
+                      //   ),
+                      //
+                      //   followingPinTheme: PinTheme(
+                      //     decoration: BoxDecoration(
+                      //       color: Color.fromRGBO(196, 196, 196, 0.26),
+                      //       borderRadius: BorderRadius.circular(15.0),
+                      //     ),
+                      //   ),
+                      //
+                      //   //selectedFieldDecoration: pinPutDecoration,
+                      //   pinAnimationType: PinAnimationType.fade,
+                      //
+                      //   onSubmitted: (pin) async {
+                      //     selected=false;
+                      //   },
+                      //
+                      //   // onSubmit: (pin) async {
+                      //   //   selected=false;
+                      //   // },
+                      // ),
+                      child: Pinput(
                         controller: _pinPutController,
-                        submittedFieldDecoration: pinPutDecoration,
-                        selectedFieldDecoration: pinPutDecoration,
-                        followingFieldDecoration: pinPutDecoration,
-                        pinAnimationType: PinAnimationType.fade,
-
-                        onSubmit: (pin) async {
+                        length: 6,
+                        onCompleted: (pin) {
+                          print(pin);
                           selected=false;
-
+                          FocusScope.of(context).requestFocus(new FocusNode());
                         },
+
                       ),
                     ),
                     SizedBox(
@@ -174,8 +291,6 @@ class _OTPScreenState extends State<OTPScreen> {
                             minimumSize: const Size(140, 40),
                           ),
                           onPressed: () async{
-
-
 
                             try {
                               //here we check if the code enterd by the user the same one that was sent from firebase
@@ -203,7 +318,7 @@ class _OTPScreenState extends State<OTPScreen> {
                                   Navigator.pushAndRemoveUntil(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => patient()),
+                                          builder: (context) => RegistrationPatientPage()),
                                           (route) => false);
                                 }
                               });
@@ -263,33 +378,7 @@ class _OTPScreenState extends State<OTPScreen> {
     );
   }
 
-  _verifyPhone() async {
-    await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: '+962${widget.phone}',
-        verificationCompleted: (PhoneAuthCredential credential) async {
-          print("Verifued");
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          print(e.message);
-        },
-        codeSent: (String verficationID, [int? resendToken]) {
-          setState(() {
-            _verificationCode = verficationID;
-          });
-        },
-        codeAutoRetrievalTimeout: (String verificationID) {
-          setState(() {
-            _verificationCode = verificationID;
-          });
-        },
-        timeout: Duration(milliseconds: 50000));
-  }
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    _verifyPhone();
-  }
-  
+
+
 }

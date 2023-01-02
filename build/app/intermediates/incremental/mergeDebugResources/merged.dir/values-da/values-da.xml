@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Åbn på telefonen</string>
     <string name="common_signin_button_text">Log ind</string>
     <string name="common_signin_button_text_long">Log ind med Google</string>
-    <string name="hms_abort" priority="translator">"Stop"</string>
-    <string name="hms_abort_message" priority="translator">"Vil du stoppe download?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s kan ikke bruge HMS Core. Start Optimizer (Telefon-styring) eller gå til Indstillinger, aktivér alle tilladelser for %2$s (inkl. automatisk start og sekundær start), og prøv igen."</string>
-    <string name="hms_cancel" priority="translator">"Annuller"</string>
-    <string name="hms_check_failure" priority="translator">"Kunne ikke søge efter opdateringer."</string>
-    <string name="hms_checking" priority="translator">"Søger efter opdateringer..."</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Kunne ikke downloade HMS Core-pakken."</string>
-    <string name="hms_download_no_space" priority="translator">"Ikke nok ledig plads. Download kan ikke fuldføres."</string>
-    <string name="hms_download_retry" priority="translator">"Download mislykkedes. Vil du prøve igen?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Henter"</string>
-    <string name="hms_install" priority="translator">"Installer"</string>
-    <string name="hms_install_message" priority="translator">"HMS Core skal være installeret for at benytte denne funktion. Installér?"</string>
-    <string name="hms_retry" priority="translator">"Prøv igen"</string>
-    <string name="hms_update" priority="translator">"Opdater"</string>
-    <string name="hms_update_continue" priority="LT">"Hent"</string>
-    <string name="hms_update_message" priority="translator">"Opdatér til den nyeste version af HMS Core for at kunne benytte denne funktion. Opdatér nu?"</string>
-    <string name="hms_update_message_new" priority="LT">"Denne tjeneste kræver den nyeste version af følgende app:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"Ingen Wi-Fi-forbindelse. Hent ved hjælp af mobildata?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Linket er kopieret til udklipsholderen"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiér link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Åbn i browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Del link"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Tryk for mere lys</string>
     <string name="scankit_light_off">Slå lys fra</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Scan</string>
+    <string name="scankit_title_all" priority="translator">"Scan QR-kode/stregkode"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Juster QR-koden/stregkoden herunder"</string>
+    <string name="scankit_title_qr" priority="translator">"Scan QR-kode"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Juster QR-koden herunder"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Søg"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Henter AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Installer"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Henter %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Størrelse"</string>
-    <string name="upsdk_app_version" priority="translator">"Version"</string>
-    <string name="upsdk_appstore_install" priority="translator">"%s kræves for at opdatere denne app. Installer nu?"</string>
-    <string name="upsdk_cancel" priority="translator">"Annuller"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Søger efter opdateringer…"</string>
-    <string name="upsdk_choice_update" priority="LT">"Opdatering tilgængelig. Download og installér den nyeste version."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Kan ikke oprette forbindelse til serveren. Prøv igen senere."</string>
-    <string name="upsdk_detail" priority="translator">"Detaljer"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Kunne ikke hente information. Prøv igen senere."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Ingen internetforbindelse. Kontrollér netværksindstillingerne."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"App"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Senere"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Afslut"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Opdatér"</string>
-    <string name="upsdk_ota_title" priority="translator">"Ny version"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Vil du annullere installationen?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Installationen mislykkedes."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Ja"</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">"Din version er opdateret."</string>
 </resources>

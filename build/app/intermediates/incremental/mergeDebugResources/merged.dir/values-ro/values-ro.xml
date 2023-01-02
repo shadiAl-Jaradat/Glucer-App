@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Deschideți pe telefon</string>
     <string name="common_signin_button_text">Conectați-vă</string>
     <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
-    <string name="hms_abort" priority="translator">"Oprire"</string>
-    <string name="hms_abort_message" priority="translator">"Opriți descărcarea?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s nu poate utiliza HMS Core. Lansați Optimizare (Manager telefon) sau mergeți la Setări, activați toate permisiunile pentru %2$s (inclusiv cele de lansare automată și lansare secundară), și încercați din nou."</string>
-    <string name="hms_cancel" priority="translator">"Anulare"</string>
-    <string name="hms_check_failure" priority="translator">"Nu s-au putut verifica actualizările."</string>
-    <string name="hms_checking" priority="translator">"Se caută actualizări..."</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Descărcarea pachetului HMS Core eșuată."</string>
-    <string name="hms_download_no_space" priority="translator">"Nu există suficient spațiu liber. Descărcarea nu poate fi finalizată."</string>
-    <string name="hms_download_retry" priority="translator">"Descărcare eșuată. Încercați din nou?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Descărcare"</string>
-    <string name="hms_install" priority="translator">"Instalați"</string>
-    <string name="hms_install_message" priority="translator">"Trebuie să instalați HMS Core pentru a utiliza această funcție. Instalați?"</string>
-    <string name="hms_retry" priority="translator">"Reîncercare"</string>
-    <string name="hms_update" priority="translator">"Actualizare"</string>
-    <string name="hms_update_continue" priority="LT">"Descărcare"</string>
-    <string name="hms_update_message" priority="translator">"Pentru a utiliza această funcție, actualizați HMS Core la cea mai recentă versiune. Actualizați acum?"</string>
-    <string name="hms_update_message_new" priority="LT">"Acest serviciu solicită cea mai recentă versiune a următoarei aplicații:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"Nu există conexiune Wi-Fi. Descărcați folosind datele mobile?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Linkul a fost copiat în clipboard"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiați linkul"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Deschideți în browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Trimiteți linkul"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Atingeți pentru lumină suplimentară</string>
     <string name="scankit_light_off">Stingeți lumina</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Scanare</string>
+    <string name="scankit_title_all" priority="translator">"Scanați un cod QR/cod de bare"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Aliniați codul QR/codul de bare mai jos"</string>
+    <string name="scankit_title_qr" priority="translator">"Scanați codul QR"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Aliniați codul QR mai jos"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Căutați"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Se descarcă AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Instalare"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Se descarcă %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Dimensiune"</string>
-    <string name="upsdk_app_version" priority="translator">"Versiune"</string>
-    <string name="upsdk_appstore_install" priority="translator">"Aveți nevoie de %s pentru a actualiza această aplicație. Instalați acum?"</string>
-    <string name="upsdk_cancel" priority="translator">"Anulați"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Se caută actualizări..."</string>
-    <string name="upsdk_choice_update" priority="LT">"Actualizare disponibilă. Descărcați și instalați cea mai recentă versiune."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Nu se poate conecta la server. Încercați din nou mai târziu."</string>
-    <string name="upsdk_detail" priority="translator">"Detalii"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Nu se pot regăsi informații. Încercați din nou mai târziu."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Fără conexiune la internet. Verificați setările de rețea."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"Aplicație"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Mai târziu"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Ieșire"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Actualizare"</string>
-    <string name="upsdk_ota_title" priority="translator">"Versiune nouă"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Anulați instalarea?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Instalarea a eșuat."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Da"</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">"Versiunea dvs. este actualizată."</string>
 </resources>

@@ -273,26 +273,16 @@ class _patientInformationState extends State<patientInformation> {
                                                                 OutlineInputBorder(
                                                               borderSide: BorderSide(
                                                                   color: Color
-                                                                      .fromRGBO(
-                                                                          219,
-                                                                          228,
-                                                                          230,
-                                                                          1),
+                                                                      .fromRGBO(219, 228, 230, 1),
                                                                   width: 3.0),
                                                               borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          18.0),
+                                                                  BorderRadius.circular(18.0),
                                                             ),
                                                             focusedBorder:
                                                                 OutlineInputBorder(
                                                               borderSide: const BorderSide(
                                                                   color: Color
-                                                                      .fromRGBO(
-                                                                          133,
-                                                                          165,
-                                                                          171,
-                                                                          1),
+                                                                      .fromRGBO(133, 165, 171, 1),
                                                                   width: 3.0),
                                                               borderRadius:
                                                                   BorderRadius
@@ -314,53 +304,29 @@ class _patientInformationState extends State<patientInformation> {
                                                             height: 54,
                                                             child:
                                                                 ElevatedButton(
-                                                              style: ElevatedButton
-                                                                  .styleFrom(
-                                                                      fixedSize:
-                                                                          Size(204,
-                                                                              37),
-                                                                      textStyle: TextStyle(
-                                                                          fontSize:
-                                                                              18),
-                                                                      shape:
-                                                                          RoundedRectangleBorder(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(52),
-                                                                      ),
-                                                                      primary: Color
-                                                                          .fromRGBO(
-                                                                              52,
-                                                                              91,
-                                                                              99,
-                                                                              1)),
+                                                              style: ElevatedButton.styleFrom(
+                                                                      fixedSize: Size(204, 37),
+                                                                      textStyle: TextStyle(fontSize: 18),
+                                                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(52),),
+                                                                      primary: Color.fromRGBO(52, 91, 99, 1)),
                                                               onPressed: () {
                                                                 setState(() {
                                                                   time();
                                                                   timeInEnglish();
                                                                   tag = 1;
-                                                                  before = double
-                                                                      .parse(_reading
-                                                                          .text);
-                                                                  if (before <=
-                                                                      0) {
-                                                                    showDialog<
-                                                                        String>(
-                                                                      context:
-                                                                          context,
-                                                                      builder: (BuildContext
-                                                                              context) =>
+                                                                  before = double.parse(_reading.text);
+                                                                  if (before <= 0) {
+                                                                    showDialog<String>(
+                                                                      context: context,
+                                                                      builder: (BuildContextcontext) =>
                                                                           AlertDialog(
-                                                                        title: const Text(
-                                                                            'ERROR'),
-                                                                        content:
-                                                                            const Text('الرقم الذي ادخلته خاطئ  , الرجاء اعادة ادخال الرقم '),
-                                                                        actions: <
-                                                                            Widget>[
+                                                                        title: const Text('ERROR'),
+                                                                        content: const Text('الرقم الذي ادخلته خاطئ  , الرجاء اعادة ادخال الرقم '),
+                                                                        actions: <Widget>[
                                                                           TextButton(
                                                                             onPressed: () =>
                                                                                 Navigator.pop(context, 'OK'),
-                                                                            child:
-                                                                                const Text('OK'),
+                                                                            child: const Text('OK'),
                                                                           ),
                                                                         ],
                                                                       ),
@@ -374,19 +340,17 @@ class _patientInformationState extends State<patientInformation> {
                                                                     //       wa2t,data['Days_English_before'],englishDay
                                                                     //   );
                                                                     // else
-                                                                    doctor
-                                                                        .writeReadingsBefore(
-                                                                      before,
-                                                                      arabicDay,
-                                                                      period,
-                                                                      wa2t,
-                                                                      englishDay,
-                                                                      data[
-                                                                          'BeforeReadings'],
-                                                                      data[
-                                                                          'Days_English_before'],
-                                                                      DateTime
-                                                                          .now(),
+                                                                    doctor.writeReadingsBefore(
+                                                                      newRead: before,
+                                                                      arabicDay: arabicDay,
+                                                                      period: period,
+                                                                      wa2t: wa2t,
+                                                                      englishTime: englishDay,
+                                                                      oldReadings: data['BeforeReadings'],
+                                                                      oldDays: data['Days_English_before'],
+                                                                      oldBeforeDateTime: data['BeforeDateTime'],
+                                                                      oldBeforeReadingsDateArabic: data['BeforeReadingsDateArabic'],
+                                                                      dateTime: DateTime.now(),
                                                                     );
                                                                     _reading
                                                                         .clear();
@@ -656,19 +620,17 @@ class _patientInformationState extends State<patientInformation> {
                                                                       ),
                                                                     );
                                                                   } else {
-                                                                    doctor
-                                                                        .writeReadingsAfter(
-                                                                      after,
-                                                                      arabicDay,
-                                                                      period,
-                                                                      wa2t,
-                                                                      englishDay,
-                                                                      data[
-                                                                          'AfterReadings'],
-                                                                      data[
-                                                                          'Days_English_after'],
-                                                                      DateTime
-                                                                          .now(),
+                                                                    doctor.writeReadingsAfter(
+                                                                      newRead: after,
+                                                                      arabicDay: arabicDay,
+                                                                      period: period,
+                                                                      wa2t: wa2t,
+                                                                      englishDay: englishDay,
+                                                                      oldReadings: data['AfterReadings'],
+                                                                      oldDays: data['Days_English_after'],
+                                                                      oldAfterDateTime: data['AfterDateTime'],
+                                                                      oldAfterReadingsDateArabic: data['AfterReadingsDateArabic'],
+                                                                      dateTime: DateTime.now(),
                                                                     );
                                                                     _reading
                                                                         .clear();
@@ -763,10 +725,9 @@ class _patientInformationState extends State<patientInformation> {
 
   void fillCardsBefore(
       List<dynamic> arrayBeforeRead, List<dynamic> arrayBeforeDate) {
-    for (var i = 0; i < arrayBeforeRead.length; i++) {
+    for (var i = arrayBeforeRead.length-1 ; i >=0 ; i--) {
       String read = arrayBeforeRead[i].toString();
       String date = arrayBeforeDate[i].toString();
-      print("**** " + read + "  " + date);
       cardListBefore.add(beforeCard(read, date));
     }
   }
@@ -847,7 +808,7 @@ class _patientInformationState extends State<patientInformation> {
 
   void fillCardsAfter(
       List<dynamic> arrayAfterRead, List<dynamic> arrayAfterDate) {
-    for (var i = 0; i < arrayAfterRead.length; i++) {
+    for (var i = arrayAfterRead.length-1 ; i >=0 ; i--) {
       String read = arrayAfterRead[i].toString();
       String date = arrayAfterDate[i].toString();
       print("**** " + read + "  " + date);

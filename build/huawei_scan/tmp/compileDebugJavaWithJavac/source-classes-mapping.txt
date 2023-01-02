@@ -5,8 +5,6 @@ com/huawei/hms/flutter/scan/multiprocessor/MultiProcessorHandler.java
  com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$1
  com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$2
  com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorHandler$3
-com/huawei/hms/flutter/scan/scanpermissions/PermissionMethodCallHandler.java
- com.huawei.hms.flutter.scan.scanpermissions.PermissionMethodCallHandler
 com/huawei/hms/flutter/scan/customizedview/CustomizedViewMethodCallHandler.java
  com.huawei.hms.flutter.scan.customizedview.CustomizedViewMethodCallHandler
 com/huawei/hms/flutter/scan/customizedview/RemoteViewHandler.java

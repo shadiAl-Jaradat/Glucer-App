@@ -3,8 +3,9 @@
     "grs_base_url": [
       "https://grs.dbankcloud.com",
       "https://grs.dbankcloud.cn",
-      "https://grs.dbankcloud.eu",
-      "https://grs.dbankcloud.asia"
+      "https://grs.dbankcloud.asia",
+      "https://grs.platform.dbankcloud.ru",
+      "https://grs.dbankcloud.eu"
     ],
     "grs_query_endpoint_1.0": "/grs/1.0/%1$s/router",
     "grs_query_endpoint_2.0": "/grs/2.0/router",

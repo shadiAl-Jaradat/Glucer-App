@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign In</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="hms_abort" priority="translator">"Stop"</string>
-    <string name="hms_abort_message" priority="translator">"Stop downloading?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s is unable to use HMS Core. Launch Optimiser (Phone Manager) or go to Settings, enable all permissions for %2$s (including auto-launch and secondary launch), and try again."</string>
-    <string name="hms_cancel" priority="translator">"Cancel"</string>
-    <string name="hms_check_failure" priority="translator">"Failed to check for updates."</string>
-    <string name="hms_checking" priority="translator">"Checking for updates…"</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Failed to download HMS Core package."</string>
-    <string name="hms_download_no_space" priority="translator">"Not enough free space. Download cannot be completed."</string>
-    <string name="hms_download_retry" priority="translator">"Download failed. Try again?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Downloading"</string>
-    <string name="hms_install" priority="translator">"Install"</string>
-    <string name="hms_install_message" priority="translator">"HMS Core must be installed to use this feature. Install?"</string>
-    <string name="hms_retry" priority="translator">"Retry"</string>
-    <string name="hms_update" priority="translator">"Update"</string>
-    <string name="hms_update_continue" priority="LT">"Download"</string>
-    <string name="hms_update_message" priority="translator">"Update to the latest version of HMS Core to use this feature. Update now?"</string>
-    <string name="hms_update_message_new" priority="LT">"This service requires the latest version of the following app:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"No Wi-Fi connection. Download using mobile data?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copied to clipboard"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copy link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Open in browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Share link"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Touch for more light</string>
     <string name="scankit_light_off">Turn off light</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Scan</string>
+    <string name="scankit_title_all" priority="translator">"Scan QR code/barcode"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Align the QR code/barcode below"</string>
+    <string name="scankit_title_qr" priority="translator">"Scan QR code"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Align the QR code below"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Search"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Downloading AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Install"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Downloading %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Size"</string>
-    <string name="upsdk_app_version" priority="translator">"Version"</string>
-    <string name="upsdk_appstore_install" priority="translator">"%s is required to update this app. Install now?"</string>
-    <string name="upsdk_cancel" priority="translator">"Cancel"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Checking for updates…"</string>
-    <string name="upsdk_choice_update" priority="LT">"Update available. Please download and install the latest version."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Unable to connect to server. Please try again later."</string>
-    <string name="upsdk_detail" priority="translator">"Details"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Unable to retrieve information. Please try again later."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"No Internet connection. Please check your network settings."</string>
-    <string name="upsdk_ota_app_name" priority="translator">"App"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Later"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="translator">"Exit"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Update"</string>
-    <string name="upsdk_ota_title" priority="translator">"New version"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Cancel the installation?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Installation failed."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Yes"</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">"Your version is up to date."</string>
 </resources>

@@ -81,7 +81,6 @@ class _doctorState extends State<doctor> {
 import 'package:flutter/material.dart';
 import 'package:new_3ala5er/core/screens/doctor/lstOfMyPatient.dart';
 import '../../service/firebase.service.dart';
-import 'package:huawei_scan/HmsScan.dart';
 
 import 'package:intl/intl.dart' as intl;
 

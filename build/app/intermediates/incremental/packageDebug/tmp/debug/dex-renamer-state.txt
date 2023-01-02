@@ -1,9 +1,9 @@
-#Sat Oct 08 21:00:53 EEST 2022
-base.2=/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
+#Sun Jan 01 21:00:45 EET 2023
+base.2=/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
-base.1=/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+base.1=/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
 path.1=classes2.dex
-base.0=/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.0=/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -103,12 +103,6 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
-    <color name="upsdk_blue_text_007dff">#007dff</color>
-    <color name="upsdk_category_button_select_pressed">#0076f2</color>
-    <color name="upsdk_color_gray_1">#F2F2F2</color>
-    <color name="upsdk_color_gray_10">#191919</color>
-    <color name="upsdk_color_gray_7">#808080</color>
-    <color name="upsdk_white">#FFFFFFFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -232,11 +226,6 @@
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
-    <dimen name="upsdk_margin_l">16dp</dimen>
-    <dimen name="upsdk_margin_m">8dp</dimen>
-    <dimen name="upsdk_margin_xs">2dp</dimen>
-    <dimen name="upsdk_master_body_2">13sp</dimen>
-    <dimen name="upsdk_master_subtitle">15sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item name="accessibility_action_clickable_span" type="id"/>
@@ -342,7 +331,6 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">restclient-common</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -361,73 +349,34 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="default_web_client_id" translatable="false">401952173198-geoo6fl5ncm2l1jta74n8nkrj0n19l3l.apps.googleusercontent.com</string>
+    <string name="fallback_menu_item_copy_link">Copy link</string>
+    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
+    <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="firebase_database_url" translatable="false">https://doctorpatient-e9521-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">401952173198</string>
     <string name="google_api_key" translatable="false">AIzaSyCFeWhISHQRBqfPbHNO1iK6Z953Wz9ou7g</string>
     <string name="google_app_id" translatable="false">1:401952173198:android:af1c15b02b41796f546ddf</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCFeWhISHQRBqfPbHNO1iK6Z953Wz9ou7g</string>
     <string name="google_storage_bucket" translatable="false">doctorpatient-e9521.appspot.com</string>
-    <string name="hms_abort" priority="translator">Stop</string>
-    <string name="hms_abort_message" priority="translator">Stop downloading?</string>
-    <string name="hms_bindfaildlg_message" priority="LT">%1$s is unable to use HMS Core. Launch Optimizer (Phone Manager) or go to Settings, enable all permissions for %2$s (including auto-launch and secondary launch), and try again.</string>
-    <string name="hms_bindfaildlg_title">@string/hms_update_title</string>
-    <string name="hms_cancel" priority="translator">Cancel</string>
-    <string name="hms_check_failure" priority="translator">Failed to check for updates.</string>
-    <string name="hms_checking" priority="translator">Checking for updates…</string>
-    <string name="hms_confirm" priority="translator">OK</string>
-    <string name="hms_download_failure" priority="translator">Failed to download HMS Core package.</string>
-    <string name="hms_download_no_space" priority="translator">Not enough free space. Download cannot be completed.</string>
-    <string name="hms_download_retry" priority="translator">Download failed. Try again?</string>
-    <string name="hms_downloading_loading" priority="LT">Downloading</string>
-    <string name="hms_install" priority="translator">Install</string>
-    <string name="hms_install_message" priority="translator">HMS Core must be installed to use this feature. Install?</string>
-    <string name="hms_retry" priority="translator">Retry</string>
-    <string name="hms_update" priority="translator">Update</string>
-    <string name="hms_update_continue" priority="LT">Download</string>
-    <string name="hms_update_message" priority="translator">Update to the latest version of HMS Core to use this feature. Update now?</string>
-    <string name="hms_update_message_new" priority="LT">This service requires the latest version of the following app:\n\n%1$s</string>
-    <string name="hms_update_nettype" priority="LT">No Wi-Fi connection. Download using mobile data?</string>
-    <string name="hms_update_title" priority="translator">HMS Core</string>
     <string name="project_id" translatable="false">doctorpatient-e9521</string>
-    <string name="push_cat_body" translatable="false">99A9343CEC0A64112FD2496EF752F719</string>
-    <string name="push_cat_head" translatable="false">767499AE5B2DFC9D873AF46032E13B00</string>
     <string name="scan_tip">Place the code within the frame</string>
     <string name="scankit_confirm">OK</string>
-    <string name="scankit_light">Touch for more light</string>
+    <string name="scankit_light">Turn light on</string>
     <string name="scankit_light_off">Turn off light</string>
     <string name="scankit_no_code_tip">No code detected.</string>
     <string name="scankit_scan_tip">Place the code within the frame</string>
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Scan</string>
+    <string name="scankit_title_all" priority="translator">Scan QR code/barcode</string>
+    <string name="scankit_title_all_level_two" priority="translator">Align the QR code/barcode below</string>
+    <string name="scankit_title_qr" priority="translator">Scan QR code</string>
+    <string name="scankit_title_qr_level_two" priority="translator">Align the QR code below</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title">Scan</string>
-    <string name="upsdk_app_dl_installing" priority="LT">Downloading AppGallery</string>
-    <string name="upsdk_app_download_info_new" priority="LT">Install</string>
-    <string name="upsdk_app_download_installing" priority="translator">Downloading %s…</string>
-    <string name="upsdk_app_size" priority="LT">Size</string>
-    <string name="upsdk_app_version" priority="LT">Version</string>
-    <string name="upsdk_appstore_install" priority="translator">%s is required to update this app. Install now?</string>
-    <string name="upsdk_apptouch_store_url" translatable="false">https://store-at-dre.hispace.dbankcloud.com/hwmarket/api/</string>
-    <string name="upsdk_cancel" priority="LT">Cancel</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">Checking for updates…</string>
-    <string name="upsdk_choice_update" priority="LT">Update available. Please download and install the latest version.</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">Unable to connect to server. Please try again later.</string>
-    <string name="upsdk_detail" priority="LT">Details</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">Unable to retrieve information. Please try again later.</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">No Internet connection. Please check your network settings.</string>
-    <string name="upsdk_ota_app_name" priority="LT">App</string>
-    <string name="upsdk_ota_cancel" priority="LT">Later</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">Exit</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="LT">Update</string>
-    <string name="upsdk_ota_title" priority="LT">New version</string>
-    <string name="upsdk_storage_utils" priority="LT">%1$s MB</string>
-    <string name="upsdk_store_url" translatable="false">https://store.hispace.hicloud.com/hwmarket/api/</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">Cancel the installation?</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">Installation failed.</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">Yes</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">Your version is up to date.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

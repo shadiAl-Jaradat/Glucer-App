@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/shady-jaradat/StudioProjects/project_DOG_father/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml",
+            "outputFile": "/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml",
             "map": [
                 {
-                    "source": "/Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/9a00778ea9a0a45b7d13b454c29390a4/jetified-scan-2.1.0.300/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "source": "/Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/301489e24dbaa6f19ab4f14d5368be0b/jetified-scan-2.8.0.300/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

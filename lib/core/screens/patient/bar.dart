@@ -33,7 +33,7 @@ class _barhomeState extends State<barhome> {
   PageController _pageController = PageController();
   List<Widget> _screens = [
     patientInformation(),
-    chart(),
+    ChartLabsPage(),
   ];
 
   int _selectedIndex = 0;
@@ -170,6 +170,7 @@ class _barhomeState extends State<barhome> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Color.fromRGBO(53, 91, 93, 1), size: 30),
+        automaticallyImplyLeading: false,
         bottomOpacity: 0.0,
         elevation: 0.0,
       ),

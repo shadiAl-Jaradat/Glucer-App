@@ -4,30 +4,30 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="19"
-6-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
-7        android:targetSdkVersion="29" />
-7-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml
+6-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml
 8
 9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-9-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:3:5-79
-9-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:3:22-76
+9-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:3:5-79
+9-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:3:22-76
 10
 11    <application>
-11-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:4:5-9:19
+11-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:4:5-9:19
 12        <activity
-12-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:5:9-7:43
+12-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:5:9-7:43
 13            android:name="com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity"
-13-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:5:19-99
+13-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:5:19-99
 14            android:exported="false"
-14-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:7:17-41
+14-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:7:17-41
 15            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-15-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:6:17-75
+15-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:6:17-75
 16        <activity
-16-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:9-139
+16-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:9-139
 17            android:name="com.huawei.hms.flutter.scan.multiprocessor.MultiProcessorActivity"
-17-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:19-99
+17-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:19-99
 18            android:screenOrientation="portrait" />
-18-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.1.0+300/android/src/main/AndroidManifest.xml:8:100-136
+18-->/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/android/src/main/AndroidManifest.xml:8:100-136
 19    </application>
 20
 21</manifest>

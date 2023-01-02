@@ -39,7 +39,6 @@ class _MyAppState extends State<MyApp> {
       title: 'Cloudbase',
       theme: ThemeData(
           primarySwatch: Colors.blueGrey, primaryColor: Colors.blueGrey),
-      //TODO (Razan,shadi,yazan) when want to test any page just replace user() with the class name for the page you are working on
         home: AnimatedSplashScreen(
             splash: 'images/launchLogo.jpeg',
           duration: 2000,

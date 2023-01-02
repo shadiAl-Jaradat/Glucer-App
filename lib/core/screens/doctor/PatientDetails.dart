@@ -15,9 +15,11 @@ class ChartData {
 class Details extends StatefulWidget {
   final String namePa;
   final String idPa;
+  final String history;
   const Details({
    required this.idPa,
-    required this.namePa
+    required this.namePa,
+    required this.history,
   });
 
   @override
@@ -26,12 +28,15 @@ class Details extends StatefulWidget {
 
 class _DetailsState extends State<Details> {
   late TooltipBehavior _tooltipBehavior = TooltipBehavior(enable: true);
+  TextEditingController _historyController=new TextEditingController();
 
   @override
   void initState() {
+    // _historyController = TextEditingController();
+    //_historyController.text =  widget.history.isEmpty || widget.history == null ? "" : widget.history;
     _tooltipBehavior = TooltipBehavior(enable: true);
   }
-
+  FirebaseServiceDoctor doctor = FirebaseServiceDoctor();
   @override
   Widget build(BuildContext context) {
 
@@ -211,10 +216,21 @@ class _DetailsState extends State<Details> {
                             border: Border.all(
                               color: Color.fromRGBO(139, 170, 177, 1),
                             )),
-                        child: TextFormField(
-                          keyboardType: TextInputType.multiline,
-                          maxLines: null,
-                          decoration: InputDecoration(border: InputBorder.none),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextFormField(
+                            //controller: _historyController ,
+                            initialValue: widget.history.isEmpty || widget.history == null ? "" : widget.history,
+                            keyboardType: TextInputType.multiline,
+                            maxLines: null,
+                            decoration: InputDecoration(border: InputBorder.none),
+                            onChanged: (value){
+                              doctor.updateHistoryOfPatient(
+                                  userID: widget.idPa,
+                                  newHistory: value,
+                              );
+                            },
+                          ),
                         ),
                       ),
                     ),

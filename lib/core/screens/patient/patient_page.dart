@@ -13,12 +13,12 @@ bool selected = false;
 String time = 'اليوم - الشهر - السنة';
 final _time = TextEditingController();
 
-class patient extends StatefulWidget {
+class RegistrationPatientPage extends StatefulWidget {
   @override
-  _patientState createState() => _patientState();
+  _RegistrationPatientPageState createState() => _RegistrationPatientPageState();
 }
 
-class _patientState extends State<patient> {
+class _RegistrationPatientPageState extends State<RegistrationPatientPage> {
   final _formKey = GlobalKey<FormState>();
   late String namePatient;
   late String heightPatient;

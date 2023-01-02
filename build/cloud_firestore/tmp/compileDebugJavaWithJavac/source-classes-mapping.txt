@@ -22,6 +22,8 @@ io/flutter/plugins/firebase/firestore/FlutterFirebaseFirestoreException.java
  io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreException$1
 io/flutter/plugins/firebase/firestore/streamhandler/OnTransactionResultListener.java
  io.flutter.plugins.firebase.firestore.streamhandler.OnTransactionResultListener
+io/flutter/plugins/firebase/firestore/utils/ServerTimestampBehaviorConverter.java
+ io.flutter.plugins.firebase.firestore.utils.ServerTimestampBehaviorConverter
 io/flutter/plugins/firebase/firestore/streamhandler/DocumentSnapshotsStreamHandler.java
  io.flutter.plugins.firebase.firestore.streamhandler.DocumentSnapshotsStreamHandler
 io/flutter/plugins/firebase/firestore/FlutterFirebaseFirestoreMessageCodec.java

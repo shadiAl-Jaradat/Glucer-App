@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Mở trên điện thoại</string>
     <string name="common_signin_button_text">Đăng nhập</string>
     <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
-    <string name="hms_abort" priority="translator">"Dừng"</string>
-    <string name="hms_abort_message" priority="translator">"Bạn muốn dừng tải về?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s không thể sử dụng HMS Core. Vui lòng khởi chạy Trình tối ưu hóa (Quản lý ĐT) hoặc chuyển tới mục Cài đặt để bật tất cả quyền cho %2$s (bao gồm tự động khởi chạy và khởi chạy thứ cấp), sau đó thử lại."</string>
-    <string name="hms_cancel" priority="translator">"Hủy"</string>
-    <string name="hms_check_failure" priority="translator">"Kiểm tra cập nhật thất bại."</string>
-    <string name="hms_checking" priority="translator">"Đang kiểm tra cập nhật..."</string>
-    <string name="hms_confirm" priority="translator">"OK"</string>
-    <string name="hms_download_failure" priority="translator">"Thất bại tải về gói HMS Core."</string>
-    <string name="hms_download_no_space" priority="translator">"Không đủ không gian trống. Không thể hoàn tất tải về máy."</string>
-    <string name="hms_download_retry" priority="translator">"Tải về thất bại. Thử lại?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Đang tải xuống"</string>
-    <string name="hms_install" priority="translator">"Cài đặt"</string>
-    <string name="hms_install_message" priority="translator">"Bạn cần cài đặt HMS Core mới có thể sử dụng tính năng này. Cài đặt?"</string>
-    <string name="hms_retry" priority="translator">"Thử lại"</string>
-    <string name="hms_update" priority="translator">"Cập nhật"</string>
-    <string name="hms_update_continue" priority="LT">"Tải xuống"</string>
-    <string name="hms_update_message" priority="translator">"Để sử dụng tính năng này bạn cần cập nhật phiên bản mới nhất của HMS Core. Cập nhật ngay?"</string>
-    <string name="hms_update_message_new" priority="LT">"Dịch vụ này cần các ứng dụng sau sử dụng phiên bản mới nhất:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"Không có kết nối Wi-Fi. Tải xuống bằng dữ liệu di động?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Đã sao chép đường liên kết vào bảng nhớ tạm"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Sao chép đường liên kết"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Mở trong trình duyệt"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Chia sẻ liên kết"</string>
     <string name="scankit_confirm">OK</string>
     <string name="scankit_light">Chạm để bổ sung thêm ánh sáng</string>
     <string name="scankit_light_off">Tắt đèn</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Quét</string>
+    <string name="scankit_title_all" priority="translator">"Quét mã QR/mã vạch"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Căn chỉnh mã QR/mã vạch theo bên dưới"</string>
+    <string name="scankit_title_qr" priority="translator">"Quét mã QR"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Căn chỉnh mã QR theo bên dưới"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Tìm kiếm"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Đang tải xuống AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Cài đặt"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Đang tải xuống %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Kích cỡ"</string>
-    <string name="upsdk_app_version" priority="translator">"Phiên bản"</string>
-    <string name="upsdk_appstore_install" priority="translator">"Cần có %s để cập nhật ứng dụng này. Cài đặt ngay?"</string>
-    <string name="upsdk_cancel" priority="translator">"Hủy"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Đang kiểm tra bản cập nhật…"</string>
-    <string name="upsdk_choice_update" priority="LT">"Có sẵn bản cập nhật. Hãy tải xuống và cài đặt phiên bản mới nhất."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Không thể kết nối với máy chủ. Vui lòng thử lại sau."</string>
-    <string name="upsdk_detail" priority="translator">"Chi tiết"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Không thể truy xuất thông tin. Vui lòng thử lại sau."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Không có kết nối Internet. Vui lòng kiểm tra cài đặt mạng của bạn."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"Ứng dụng"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Để sau"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Thoát"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Cập nhật"</string>
-    <string name="upsdk_ota_title" priority="translator">"Phiên bản mới"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Hủy cài đặt?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Cài đặt không thành công."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Đúng"</string>
-    <string name="upsdk_update_check_no_new_version" priority="Reviewed">"Bạn đang sử dụng phiên bản mới nhất."</string>
 </resources>

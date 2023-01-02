@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">在手機上開啟</string>
     <string name="common_signin_button_text">登入</string>
     <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
-    <string name="hms_abort" priority="translator">"停止"</string>
-    <string name="hms_abort_message" priority="translator">"停止下載？"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s 無法正常使用 HMS Core。請嘗試開啟「手機管理員」或「設定」，啟用 %2$s 的所有權限（「自動啟動」、「關聯啟動」等），並重試。"</string>
-    <string name="hms_cancel" priority="translator">"取消"</string>
-    <string name="hms_check_failure" priority="translator">"檢查 HMS Core 更新失敗。"</string>
-    <string name="hms_checking" priority="translator">"正在偵測新版本…"</string>
-    <string name="hms_confirm" priority="translator">"確定"</string>
-    <string name="hms_download_failure" priority="translator">"下載 HMS Core 安裝套件失敗。"</string>
-    <string name="hms_download_no_space" priority="translator">"可用空間不足。無法完成下載。"</string>
-    <string name="hms_download_retry" priority="translator">"下載 HMS Core 失敗。是否重試？"</string>
-    <string name="hms_downloading_loading" priority="LT">"正在下載"</string>
-    <string name="hms_install" priority="translator">"安裝"</string>
-    <string name="hms_install_message" priority="translator">"您尚未安裝 HMS Core，安裝之後才可使用此功能。是否安裝？"</string>
-    <string name="hms_retry" priority="translator">"重試"</string>
-    <string name="hms_update" priority="translator">"更新"</string>
-    <string name="hms_update_continue" priority="LT">"繼續下載"</string>
-    <string name="hms_update_message" priority="translator">"HMS Core 版本過舊，更新至最新版本才可使用此功能。是否更新？"</string>
-    <string name="hms_update_message_new" priority="LT">"該服務需安裝以下應用程式的最新版本才能使用：\n\n·%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"目前為非 Wi-Fi 網路。是否繼續下載？"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"已將連結複製到剪貼簿"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"複製連結"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"在瀏覽器中開啟"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"分享連結"</string>
     <string name="scankit_confirm">確認</string>
     <string name="scankit_light">輕觸照亮</string>
     <string name="scankit_light_off">輕觸關閉</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">返回</string>
     <string name="scankit_talkback_photo">圖庫</string>
     <string name="scankit_title">掃描條碼</string>
+    <string name="scankit_title_all" priority="translator">"掃描 QR 碼/條碼"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"對準 QR 碼/條碼，即可自動掃描"</string>
+    <string name="scankit_title_qr" priority="translator">"掃描 QR 碼"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"對準 QR 碼，即可自動掃描"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"搜尋"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="translator">"正在下載華為應用程式商店"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"安裝"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"正在下載 %s"</string>
-    <string name="upsdk_app_size" priority="LT">"大小"</string>
-    <string name="upsdk_app_version" priority="LT">"版本"</string>
-    <string name="upsdk_appstore_install" priority="translator">"需要使用 %s 才能升級。是否立即安裝？"</string>
-    <string name="upsdk_cancel" priority="LT">"取消"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"正在檢查更新…"</string>
-    <string name="upsdk_choice_update" priority="LT">"有可用更新，快去升級吧。"</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"無法連線伺服器，請稍後重試"</string>
-    <string name="upsdk_detail" priority="LT">"詳情"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"無法取得資訊，請稍後重試"</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"沒有網際網路連線。請檢查網路設定。"</string>
-    <string name="upsdk_ota_app_name" priority="LT">"應用程式"</string>
-    <string name="upsdk_ota_cancel" priority="LT">"以後再說"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"結束應用程式"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="LT">"立即更新"</string>
-    <string name="upsdk_ota_title" priority="LT">"發現新版本"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s MB"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"取消安裝？"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"安裝失敗"</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"是"</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">"已是最新版本"</string>
 </resources>

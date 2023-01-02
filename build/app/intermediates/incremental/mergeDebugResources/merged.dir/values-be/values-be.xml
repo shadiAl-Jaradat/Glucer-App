@@ -45,26 +45,10 @@
     <string name="common_open_on_phone">Адкрыць на тэлефоне</string>
     <string name="common_signin_button_text">Увайсцi</string>
     <string name="common_signin_button_text_long">Увайсці праз Google</string>
-    <string name="hms_abort" priority="translator">"Спыніць"</string>
-    <string name="hms_abort_message" priority="translator">"Спыніць спампоўку?"</string>
-    <string name="hms_bindfaildlg_message" priority="translator">"%1$s не можа выкарыстоўваць HMS Core. Запусціце Аптымізатар (Дыспетчар) ці перайдзіце ў Налады, уключыце ўсе дазволы для %2$s (уключаючы аўтаматычны і другасны запускі) і паўтарыце спробу."</string>
-    <string name="hms_cancel" priority="translator">"Адмяніць"</string>
-    <string name="hms_check_failure" priority="translator">"Не ўдалося праверыць наяўнасць абнаўленняў."</string>
-    <string name="hms_checking" priority="translator">"Праверка абнаўленняў…"</string>
-    <string name="hms_confirm" priority="translator">"ОК"</string>
-    <string name="hms_download_failure" priority="translator">"Не атрымалася спампаваць пакет HMS Core."</string>
-    <string name="hms_download_no_space" priority="translator">"Недастаткова свабоднага месца. Немагчыма завяршыць спампоўку."</string>
-    <string name="hms_download_retry" priority="translator">"Памылка падчас спампоўкі. Паўтарыць спробу?"</string>
-    <string name="hms_downloading_loading" priority="LT">"Ідзе спампоўка"</string>
-    <string name="hms_install" priority="translator">"Усталяваць"</string>
-    <string name="hms_install_message" priority="translator">"Для карыстання гэтай функцыяй неабходна ўсталяваць HMS Core. Усталяваць?"</string>
-    <string name="hms_retry" priority="translator">"Паўтарыць"</string>
-    <string name="hms_update" priority="translator">"Абнавіць"</string>
-    <string name="hms_update_continue" priority="LT">"Спампаваць"</string>
-    <string name="hms_update_message" priority="translator">"Абнавіцеся да апошняй версіі HMS Core, каб выкарыстоўваць гэту функцыю. Абнавіць зараз?"</string>
-    <string name="hms_update_message_new" priority="LT">"Для гэтай паслугі неабходна апошняя версія наступнай праграмы:\n\n%1$s"</string>
-    <string name="hms_update_nettype" priority="LT">"Падключэнне да Wi-Fi адсутнічае. Спампаваць праз мабільную перадачу даных?"</string>
-    <string name="hms_update_title" priority="translator">"HMS Core"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Спасылка скапіравана ў буфер абмену"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Скапіраваць спасылку"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Адкрыць у браўзеры"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Абагуліць спасылку"</string>
     <string name="scankit_confirm">ОК</string>
     <string name="scankit_light">Націсніце, каб дадаць святла</string>
     <string name="scankit_light_off">Выключыць святло</string>
@@ -73,29 +57,10 @@
     <string name="scankit_talkback_back">Back</string>
     <string name="scankit_talkback_photo">Gallery</string>
     <string name="scankit_title">Сканіраваць</string>
+    <string name="scankit_title_all" priority="translator">"Сканіруйце QR-код або штрыхкод"</string>
+    <string name="scankit_title_all_level_two" priority="translator">"Сумясціце QR-код або штрыхкод ніжэй"</string>
+    <string name="scankit_title_qr" priority="translator">"Сканіруйце QR-код"</string>
+    <string name="scankit_title_qr_level_two" priority="translator">"Сумясціце QR-код ніжэй"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Пошук"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="upsdk_app_dl_installing" priority="LT">"Загрузка AppGallery"</string>
-    <string name="upsdk_app_download_info_new" priority="translator">"Усталяваць"</string>
-    <string name="upsdk_app_download_installing" priority="translator">"Спампаванне %s…"</string>
-    <string name="upsdk_app_size" priority="translator">"Памер"</string>
-    <string name="upsdk_app_version" priority="translator">"Версія"</string>
-    <string name="upsdk_appstore_install" priority="translator">"Для абнаўлення гэтай праграмы спатрэбіцца %s. Устанавіць зараз?"</string>
-    <string name="upsdk_cancel" priority="translator">"Адмена"</string>
-    <string name="upsdk_checking_update_prompt" priority="LT">"Праверка абнаўленняў…"</string>
-    <string name="upsdk_choice_update" priority="LT">"Абнаўленне даступна. Калі ласка, спампуйце і ўсталюйце апошнюю версію."</string>
-    <string name="upsdk_connect_server_fail_prompt_toast" priority="translator">"Немагчыма падлучыцца да серверу. Калі ласка, паспрабуйце пазней."</string>
-    <string name="upsdk_detail" priority="translator">"Дэталі"</string>
-    <string name="upsdk_getting_message_fail_prompt_toast" priority="translator">"Немагчыма атрымаць даныя. Калі ласка, паспрабуйце пазней."</string>
-    <string name="upsdk_no_available_network_prompt_toast" priority="translator">"Інтэрнэт злучэнне адсутнічае. Калі ласка, праверце сеткавыя налады."</string>
-    <string name="upsdk_ota_app_name" priority="LT">"Праграма"</string>
-    <string name="upsdk_ota_cancel" priority="translator">"Пазней"</string>
-    <string name="upsdk_ota_force_cancel_new" priority="LT">"Выхад"</string>
-    <string name="upsdk_ota_notify_updatebtn" priority="translator">"Абнавіць"</string>
-    <string name="upsdk_ota_title" priority="translator">"Новая версія"</string>
-    <string name="upsdk_storage_utils" priority="LT">"%1$s МБ"</string>
-    <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">"Адмяніць устаноўку?"</string>
-    <string name="upsdk_third_app_dl_install_failed" priority="translator">"Памылка ўсталявання."</string>
-    <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">"Так"</string>
-    <string name="upsdk_update_check_no_new_version" priority="Reviewed">"Вы карыстаецеся самай новай версіяй."</string>
 </resources>
