@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_3ala5er/core/screens/phonev/loginscreen.dart';
+import 'package:new_3ala5er/core/screens/predictor/bmiScreen.dart';
 
 //import 'package:flutter_test/flutter_test.dart';
 late bool choice;
@@ -71,8 +72,7 @@ class _AppUserState extends State<AppUser> {
                                                           LoginScreen()));
                                             },
                                             style: ElevatedButton.styleFrom(
-                                                primary: const Color.fromRGBO(
-                                                    241, 245, 241, 1),
+                                                primary: const Color.fromRGBO(241, 245, 241, 1),
                                                 elevation: 0.0,
                                                 shape: RoundedRectangleBorder(
                                                     borderRadius:
@@ -98,8 +98,7 @@ class _AppUserState extends State<AppUser> {
                                                       style: TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold,
-                                                          color: Color.fromRGBO(
-                                                              91, 122, 128, 1),
+                                                          color: Color.fromRGBO(91, 122, 128, 1),
                                                           fontSize: 25),
                                                     ),
                                                   )
@@ -135,27 +134,22 @@ class _AppUserState extends State<AppUser> {
                                                         BorderRadius.circular(
                                                             16))),
                                             child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsets.only(
-                                                        top: 25.0),
+                                                    padding: EdgeInsets.only(top: 25.0),
                                                     child: Image(
-                                                        image: AssetImage(
-                                                            'images/patient.png')),
+                                                        image: AssetImage('images/patient.png')),
                                                   ),
                                                   Padding(
-                                                    padding: EdgeInsets.only(
-                                                        top: 20.0),
+                                                    padding: EdgeInsets.only(top: 20.0),
                                                     child: Text(
                                                       'مريض',
                                                       style: TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold,
-                                                          color: Color.fromRGBO(
-                                                              91, 122, 128, 1),
+                                                          color: Color.fromRGBO(91, 122, 128, 1),
                                                           fontSize: 25),
                                                     ),
                                                   )
@@ -199,14 +193,14 @@ class _AppUserState extends State<AppUser> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      LoginScreen()));
+                                                      BMIScreen()));
                                         },
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
                                             Text(
-                                              'اختبار',
+                                              'الفحص',
                                               style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,

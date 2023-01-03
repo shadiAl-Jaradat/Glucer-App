@@ -97,15 +97,21 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
   // }
 
   @override
-  void initState() async {
+  void initState() {
     _tooltipBehavior = TooltipBehavior(enable: true);
+    getLabs();
+    //_Call_list_files();
+    super.initState();
+  }
+
+
+  void getLabs() async {
     listOfLabs = await getFilesList();
     for(int index =0 ; index< listOfLabs.length ; index++){
-      _cardListFiles.add(createCardFile(listOfLabs[index] as PlatformFile ));
+      setState(() {
+        _cardListFiles.add(createCardFile(listOfLabs[index]));
+      });
     }
-
-    _Call_list_files();
-    super.initState();
   }
 
   Future<firebase_storage.UploadTask> uploadFile(File file) async {
@@ -150,10 +156,11 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
     for (var file in listOfFiles.items) {
       String downloadURL = await file.getDownloadURL();
       filePaths.add(downloadURL);
+     // _cardListFiles.add(createCardFile(downloadURL));
     }
 
-    print(filePaths);
 
+    print(filePaths);
     return filePaths;
   }
 
@@ -162,6 +169,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
 
   @override
   Widget build(BuildContext context) {
+
     CollectionReference users = FirebaseFirestore.instance
         .collection('/doctors')
         .doc(UserSimplePreferencesDoctorID.getDrID())
@@ -312,87 +320,85 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                       //color: Colors.red,
                       child: Directionality(
                         textDirection: TextDirection.rtl,
-                        child: Row(
-                          children: <Widget>[
-                            Column(
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      right: 20, top: 10, left: 0),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(14)),
-                                      border: Border.all(
-                                        color: Color.fromRGBO(218, 228, 229, 1),
-                                        width: 2,
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        right: 20, top: 10, left: 0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.all(Radius.circular(14)),
+                                        border: Border.all(
+                                          color: Color.fromRGBO(218, 228, 229, 1),
+                                          width: 2,
+                                        ),
+                                        //color: Colors.black,
                                       ),
-                                      //color: Colors.black,
-                                    ),
 
-                                    //color: Colors.black,
-                                    height: 141,
-                                    width: 114,
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(top: 27),
-                                      child: Column(
-                                        children: [
-                                          ElevatedButton(
-                                            style: ElevatedButton.styleFrom(
-                                              primary:
-                                              Color.fromRGBO(91, 122, 129, 1),
-                                              shape: CircleBorder(),
-                                              padding: EdgeInsets.all(10),
+                                      //color: Colors.black,
+                                      height: 141,
+                                      width: 114,
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top: 27),
+                                        child: Column(
+                                          children: [
+                                            ElevatedButton(
+                                              style: ElevatedButton.styleFrom(
+                                                primary:
+                                                Color.fromRGBO(91, 122, 129, 1),
+                                                shape: CircleBorder(),
+                                                padding: EdgeInsets.all(10),
+                                              ),
+                                              onPressed: () async {
+                                                final result = await FilePicker.platform.pickFiles();
+                                                if (result == null) return;
+                                                final path = result.files.single.path!;
+                                                setState(() => file = File(path));
+                                                uploadFile(file!);
+                                                _cardListFiles.add(createCardFile(path));
+                                              },
+                                              //icon: Icon(Icons.add),
+                                              child: Icon(Icons.add),
                                             ),
-                                            onPressed: () async {
-                                              final result = await FilePicker.platform.pickFiles();
-                                              if (result == null) return;
-                                              final path = result.files.single.path!;
-                                              setState(() => file = File(path));
-                                              uploadFile(file!);
-                                              final ff = result.files.first;
-                                              //Path pp = ff.path as Path;
-                                              _cardListFiles.add(createCardFile(ff));
-                                            },
-                                            //icon: Icon(Icons.add),
-                                            child: Icon(Icons.add),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.center,
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(
-                                                  top: 3.0),
-                                              child: Text(
-                                                //'اضف نتيجة جديدة',
-                                                'اضف نتيجة\nجديدة',
-                                                style: TextStyle(
-                                                    color: Color.fromRGBO(
-                                                        91, 122, 129, 1),
-                                                    fontSize: 15),
-                                                textAlign: TextAlign.center,
+                                            Align(
+                                              alignment: Alignment.center,
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 3.0),
+                                                child: Text(
+                                                  //'اضف نتيجة جديدة',
+                                                  'اضف نتيجة\nجديدة',
+                                                  style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          91, 122, 129, 1),
+                                                      fontSize: 15),
+                                                  textAlign: TextAlign.center,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Directionality(
-                              textDirection: TextDirection.rtl,
-                              child: SingleChildScrollView(
-                                scrollDirection: Axis.horizontal,
+                                ],
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Directionality(
+                                textDirection: TextDirection.rtl,
                                 child: Row(
                                   children: _Call_list_files(),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -413,11 +419,11 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
     return _cardListFiles;
   }
 
-  Widget createCardFile(PlatformFile Plt_file) {
-    String? ext = Plt_file.extension;
+  Widget createCardFile(String path) {
+    //String? ext = Plt_file.extension;
 
     return InkWell(
-      onTap: () => OpenFile.open(Plt_file.path!),
+      onTap: () => OpenFile.open(path),
       child: Padding(
         padding: const EdgeInsets.only(top: 10, right: 5, left: 5),
         child: Container(

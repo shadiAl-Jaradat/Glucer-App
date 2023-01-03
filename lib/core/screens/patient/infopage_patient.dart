@@ -226,12 +226,7 @@ class _patientInformationState extends State<patientInformation> {
                                                           'ادخال القراءة و انت صائم',
                                                           style: TextStyle(
                                                               fontSize: 24,
-                                                              color: Color
-                                                                  .fromRGBO(
-                                                                      52,
-                                                                      91,
-                                                                      99,
-                                                                      1)),
+                                                              color: Color.fromRGBO(52, 91, 99, 1)),
                                                         ),
                                                       ),
                                                     )),

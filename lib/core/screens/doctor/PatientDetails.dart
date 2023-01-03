@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:new_3ala5er/core/screens/doctor/labsOfPatient.dart';
 import 'package:new_3ala5er/core/screens/doctor/lstOfMyPatient.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
@@ -35,8 +37,46 @@ class _DetailsState extends State<Details> {
     // _historyController = TextEditingController();
     //_historyController.text =  widget.history.isEmpty || widget.history == null ? "" : widget.history;
     _tooltipBehavior = TooltipBehavior(enable: true);
+    getLabs();
+    super.initState();
   }
   FirebaseServiceDoctor doctor = FirebaseServiceDoctor();
+
+
+
+  List<String> listOfLabs = [];
+
+  void getLabs() async {
+    listOfLabs = await getFilesList();
+    // for(int index =0 ; index< listOfLabs.length ; index++){
+    //   setState(() {
+    //     _cardListFiles.add(createCardFile(listOfLabs[index]));
+    //   });
+    // }
+  }
+  Future<List<String>> getFilesList() async {
+
+    List<String> filePaths = [];
+    Reference storageRef = FirebaseStorage.instance.ref()
+        .child('Patients_labs')
+        .child('/'+widget.idPa);
+
+    dynamic listOfFiles = await storageRef.listAll();
+
+    for (var file in listOfFiles.items) {
+      String downloadURL = await file.getDownloadURL();
+      filePaths.add(downloadURL);
+      // _cardListFiles.add(createCardFile(downloadURL));
+    }
+
+
+    print(filePaths);
+    return filePaths;
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -157,11 +197,6 @@ class _DetailsState extends State<Details> {
                 ],
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              //color: Colors.red,
-              child: SizedBox(width: 200, child: ToggleButtonDoc()),
-            ),
             SizedBox(
               height: 30,
             ),
@@ -234,6 +269,7 @@ class _DetailsState extends State<Details> {
                         ),
                       ),
                     ),
+                    SizedBox(height: 30,),
                     Directionality(
                       textDirection: TextDirection.rtl,
                       child: Row(
@@ -248,14 +284,14 @@ class _DetailsState extends State<Details> {
                           SizedBox(
                             width: 15,
                           ),
-                          GestureDetector(
-                            onTap: (){
-
+                          TextButton(
+                            onPressed: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => LabsOfPatient(patientID: widget.idPa,labsPaths: listOfLabs,)));
                             },
                             child: Text(
                               'عرض الكل',
                               style: TextStyle(
-                                fontSize: 10,
+                                fontSize: 15,
                                 color: Color.fromRGBO(139, 170, 177, 1),
                               ),
                             ),
