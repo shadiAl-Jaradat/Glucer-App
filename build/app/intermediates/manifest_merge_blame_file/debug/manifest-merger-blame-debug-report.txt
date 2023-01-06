@@ -14,27 +14,27 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->/Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/debug/AndroidManifest.xml:6:5-66
 14-->/Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/debug/AndroidManifest.xml:6:22-64
-15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
-15-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
-16
-17    <queries>
-17-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
-18        <intent>
-18-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
-19            <action android:name="android.intent.action.GET_CONTENT" />
-19-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
-19-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
-20
-21            <data android:mimeType="*/*" />
-21-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
-21-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
-22        </intent>
-23    </queries>
-24
-25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-25-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-25-->[:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+15-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+16-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+17
+18    <queries>
+18-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
+19        <intent>
+19-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
+20            <action android:name="android.intent.action.GET_CONTENT" />
+20-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
+20-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
+21
+22            <data android:mimeType="*/*" />
+22-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+22-->[:file_picker] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
+23        </intent>
+24    </queries>
+25
 26    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 26-->[:open_file] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-83
 26-->[:open_file] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-80
@@ -130,11 +130,11 @@
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
 83-->[:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 84            <meta-data
-84-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+84-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-13:85
 85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-85-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+85-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:12:17-134
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+86-->[:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-82
 87            <meta-data
 87-->[:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"

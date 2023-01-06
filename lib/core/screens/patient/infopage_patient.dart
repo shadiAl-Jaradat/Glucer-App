@@ -57,23 +57,31 @@ void checkDate() {
 
 class _patientInformationState extends State<patientInformation> {
   final _reading = TextEditingController();
-
+  late double screenHeight;
+  late double screenWidth;
+  late double textScale;
   bool loading = true;
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
+    screenHeight = MediaQuery.of(context).size.height;
+    screenWidth = MediaQuery.of(context).size.width;
+    textScale = MediaQuery.of(context).textScaleFactor;
+    print("text scale : ");
+    print(textScale);
 
     CollectionReference users = FirebaseFirestore.instance
         .collection('/doctors')
         .doc(UserSimplePreferencesDoctorID.getDrID())
         .collection('/patient');
 
+    String namePA = UserSimplePreferencesUser.getPaName() ?? "name";
+
     return FutureBuilder<DocumentSnapshot>(
       future: users
           .doc(UserSimplePreferencesUser.getUserID() ?? uid)
           .collection('/weeks')
-          .doc(UserSimplePreferencesUser.getCtOfWeek())
+          .doc(UserSimplePreferencesUser.getCtOfWeek() ?? "0")
           .get(),
       builder:
           (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
@@ -93,8 +101,10 @@ class _patientInformationState extends State<patientInformation> {
 
           return Scaffold(
             backgroundColor: Colors.white,
-            body: ListView(children: [
-              Directionality(
+            body: Container(
+              height: screenHeight,
+              width: screenWidth,
+              child: Directionality(
                 textDirection: TextDirection.rtl,
                 child: Padding(
                   padding: EdgeInsets.only(right: 30),
@@ -122,8 +132,8 @@ class _patientInformationState extends State<patientInformation> {
                                             Color.fromRGBO(139, 139, 139, 1)),
                                   ),
                                   Text(
-                                    UserSimplePreferencesUser.getPaName()
-                                        .toString(),
+                                   // data['Name'],
+                                    namePA,
                                     style: TextStyle(fontSize: 24),
                                   ),
                                 ],
@@ -134,15 +144,16 @@ class _patientInformationState extends State<patientInformation> {
                       ),
 
                       ///Tow buttons "before" & "after"
-                      Row(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(left: 20),
-                            child: Column(
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Column(
                               children: [
                                 Text(
                                   'صائم',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 25 * textScale),
                                 ),
                                 ElevatedButton(
                                   style: ElevatedButton.styleFrom(
@@ -162,8 +173,7 @@ class _patientInformationState extends State<patientInformation> {
                                           color: Colors.grey.withOpacity(0.4),
                                           spreadRadius: 2,
                                           blurRadius: 10,
-                                          offset: Offset(0,
-                                              8), // changes position of shadow
+                                          offset: Offset(0, 8), // changes position of shadow
                                         ),
                                       ],
                                     ),
@@ -301,7 +311,7 @@ class _patientInformationState extends State<patientInformation> {
                                                                 ElevatedButton(
                                                               style: ElevatedButton.styleFrom(
                                                                       fixedSize: Size(204, 37),
-                                                                      textStyle: TextStyle(fontSize: 18),
+                                                                      textStyle: TextStyle(fontSize: 20 * textScale),
                                                                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(52),),
                                                                       primary: Color.fromRGBO(52, 91, 99, 1)),
                                                               onPressed: () {
@@ -377,288 +387,287 @@ class _patientInformationState extends State<patientInformation> {
                                 )
                               ],
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 10.0),
-                            child: Column(
-                              //mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'غير صائم',
-                                  style: TextStyle(fontSize: 18),
-                                ),
-                                ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                      primary: Colors.white,
-                                      elevation: 0,
-                                      shape:
-                                          CircleBorder() //elevated btton background color
-                                      ),
-                                  child: Container(
-                                    child: Image(
-                                      image:
-                                          AssetImage('images/beforeButton.png'),
-                                    ),
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: Colors.white,
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(0.4),
-                                          spreadRadius: 2,
-                                          blurRadius: 10,
-                                          offset: Offset(0,
-                                              8), // changes position of shadow
-                                        ),
-                                      ],
-                                    ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 10.0),
+                              child: Column(
+                                //mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'غير صائم',
+                                    style: TextStyle(fontSize: 25 * textScale),
                                   ),
-                                  onPressed: () {
-                                    setState(() {
-                                      showMaterialModalBottomSheet(
-                                        context: context,
-                                        backgroundColor: Colors.transparent,
-                                        expand: true,
-                                        builder: (context) => BackdropFilter(
-                                          filter: ImageFilter.blur(
-                                              sigmaX: 15, sigmaY: 15),
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.end,
-                                            children: [
-                                              Container(
-                                                height: screenHeight * 0.7,
-                                                width: MediaQuery.of(context)
-                                                    .size
-                                                    .width,
-                                                decoration: BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius:
-                                                        BorderRadius.only(
-                                                            topLeft: Radius
-                                                                .circular(30),
-                                                            topRight:
-                                                                Radius.circular(
-                                                                    30))),
-                                                //color: Colors.white,
-                                                child: ListView(
-                                                  children: <Widget>[
-                                                    Align(
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                        primary: Colors.white,
+                                        elevation: 0,
+                                        shape:
+                                            CircleBorder() //elevated btton background color
+                                        ),
+                                    child: Container(
+                                      child: Image(
+                                        image:
+                                            AssetImage('images/beforeButton.png'),
+                                      ),
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: Colors.white,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.4),
+                                            spreadRadius: 2,
+                                            blurRadius: 10,
+                                            offset: Offset(0,
+                                                8), // changes position of shadow
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      setState(() {
+                                        showMaterialModalBottomSheet(
+                                          context: context,
+                                          backgroundColor: Colors.transparent,
+                                          expand: true,
+                                          builder: (context) => BackdropFilter(
+                                            filter: ImageFilter.blur(
+                                                sigmaX: 15, sigmaY: 15),
+                                            child: Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.end,
+                                              children: [
+                                                Container(
+                                                  height: screenHeight * 0.7,
+                                                  width: MediaQuery.of(context)
+                                                      .size
+                                                      .width,
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius:
+                                                          BorderRadius.only(
+                                                              topLeft: Radius
+                                                                  .circular(30),
+                                                              topRight:
+                                                                  Radius.circular(
+                                                                      30))),
+                                                  //color: Colors.white,
+                                                  child: ListView(
+                                                    children: <Widget>[
+                                                      Align(
+                                                          alignment:
+                                                              Alignment.topLeft,
+                                                          child: Padding(
+                                                              padding:
+                                                                  const EdgeInsets
+                                                                          .only(
+                                                                      left: 30.0),
+                                                              child: IconButton(
+                                                                onPressed: () =>
+                                                                    Navigator.of(
+                                                                            context)
+                                                                        .pop(),
+                                                                icon: Icon(
+                                                                  Icons.close,
+                                                                  size: 16,
+                                                                ),
+                                                              ))),
+                                                      ListTile(
+                                                          title: Align(
                                                         alignment:
-                                                            Alignment.topLeft,
+                                                            Alignment.center,
                                                         child: Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                        .only(
-                                                                    left: 30.0),
-                                                            child: IconButton(
-                                                              onPressed: () =>
-                                                                  Navigator.of(
-                                                                          context)
-                                                                      .pop(),
-                                                              icon: Icon(
-                                                                Icons.close,
-                                                                size: 16,
-                                                              ),
-                                                            ))),
-                                                    ListTile(
-                                                        title: Align(
-                                                      alignment:
-                                                          Alignment.center,
-                                                      child: Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                    .only(
-                                                                bottom: 15.0),
-                                                        child: Text(
-                                                          'ادخال القراءة و انت غير صائم ',
-                                                          style: TextStyle(
-                                                              fontSize: 24,
-                                                              color: Color
-                                                                  .fromRGBO(
-                                                                      52,
-                                                                      91,
-                                                                      99,
-                                                                      .6)),
-                                                          // Color.fromRGBO(
-                                                          //     187, 214, 197, 1)),
+                                                          padding:
+                                                              const EdgeInsets
+                                                                      .only(
+                                                                  bottom: 15.0),
+                                                          child: Text(
+                                                            'ادخال القراءة و انت غير صائم ',
+                                                            style: TextStyle(
+                                                                fontSize: 30 * textScale,
+                                                                color: Color
+                                                                    .fromRGBO(
+                                                                        52,
+                                                                        91,
+                                                                        99,
+                                                                        .6)),
+                                                            // Color.fromRGBO(
+                                                            //     187, 214, 197, 1)),
+                                                          ),
                                                         ),
-                                                      ),
-                                                    )),
-                                                    Align(
-                                                      alignment:
-                                                          Alignment.center,
-                                                      child: SizedBox(
-                                                        width: 204,
-                                                        child: TextField(
-                                                          textAlign:
-                                                              TextAlign.center,
-                                                          keyboardType:
-                                                              TextInputType
-                                                                  .number,
-                                                          controller: _reading,
-                                                          decoration:
-                                                              InputDecoration(
-                                                            contentPadding:
-                                                                const EdgeInsets
-                                                                        .symmetric(
-                                                                    vertical:
-                                                                        22.0),
-                                                            border:
-                                                                OutlineInputBorder(
-                                                              borderSide: const BorderSide(
-                                                                  color: Color
-                                                                      .fromRGBO(
-                                                                          219,
-                                                                          228,
-                                                                          230,
-                                                                          1),
-                                                                  width: 1.5),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          18.0),
-                                                            ),
-                                                            enabledBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide: const BorderSide(
-                                                                  color: Color
-                                                                      .fromRGBO(
-                                                                          187,
-                                                                          214,
-                                                                          197,
-                                                                          .54),
-                                                                  width: 1.5),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          18.0),
-                                                            ),
-                                                            focusedBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide: const BorderSide(
-                                                                  color: Color
-                                                                      .fromRGBO(
-                                                                          187,
-                                                                          214,
-                                                                          197,
-                                                                          1),
-                                                                  width: 3.0),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          18.0),
+                                                      )),
+                                                      Align(
+                                                        alignment:
+                                                            Alignment.center,
+                                                        child: SizedBox(
+                                                          width: 204,
+                                                          child: TextField(
+                                                            textAlign:
+                                                                TextAlign.center,
+                                                            keyboardType:
+                                                                TextInputType
+                                                                    .number,
+                                                            controller: _reading,
+                                                            decoration:
+                                                                InputDecoration(
+                                                              contentPadding:
+                                                                  const EdgeInsets
+                                                                          .symmetric(
+                                                                      vertical:
+                                                                          22.0),
+                                                              border:
+                                                                  OutlineInputBorder(
+                                                                borderSide: const BorderSide(
+                                                                    color: Color
+                                                                        .fromRGBO(
+                                                                            219,
+                                                                            228,
+                                                                            230,
+                                                                            1),
+                                                                    width: 1.5),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            18.0),
+                                                              ),
+                                                              enabledBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide: const BorderSide(
+                                                                    color: Color
+                                                                        .fromRGBO(
+                                                                            187,
+                                                                            214,
+                                                                            197,
+                                                                            .54),
+                                                                    width: 1.5),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            18.0),
+                                                              ),
+                                                              focusedBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide: const BorderSide(
+                                                                    color: Color
+                                                                        .fromRGBO(
+                                                                            187,
+                                                                            214,
+                                                                            197,
+                                                                            1),
+                                                                    width: 3.0),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            18.0),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
                                                       ),
-                                                    ),
-                                                    Container(
-                                                      alignment:
-                                                          Alignment.center,
-                                                      child: Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                    .only(
-                                                                top: 20.0),
-                                                        child: SizedBox(
-                                                          height: 54,
-                                                          child: ElevatedButton(
-                                                              style: ElevatedButton
-                                                                  .styleFrom(
-                                                                      fixedSize:
-                                                                          Size(204,
-                                                                              37),
-                                                                      textStyle: TextStyle(
-                                                                          fontSize:
-                                                                              18),
-                                                                      shape:
-                                                                          RoundedRectangleBorder(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(52),
-                                                                      ),
-                                                                      primary: Color.fromRGBO(
-                                                                          187,
-                                                                          214,
-                                                                          197,
-                                                                          1)),
-                                                              onPressed: () {
-                                                                setState(() {
-                                                                  time();
-                                                                  timeInEnglish();
-                                                                  tag = 0;
-                                                                  after = double
-                                                                      .parse(_reading
-                                                                          .text);
-                                                                  if (after <=
-                                                                      0) {
-                                                                    showDialog<
-                                                                        String>(
-                                                                      context:
-                                                                          context,
-                                                                      builder:
-                                                                          (BuildContextcontext) =>
-                                                                              AlertDialog(
-                                                                        title: const Text(
-                                                                            'ERROR'),
-                                                                        content:
-                                                                            const Text('الرقم الذي ادخلته خاطئ  , الرجاء اعادة ادخال الرقم '),
-                                                                        actions: <
-                                                                            Widget>[
-                                                                          TextButton(
-                                                                            onPressed: () =>
-                                                                                Navigator.pop(context, 'OK'),
-                                                                            child:
-                                                                                const Text('OK'),
-                                                                          ),
-                                                                        ],
-                                                                      ),
-                                                                    );
-                                                                  } else {
-                                                                    doctor.writeReadingsAfter(
-                                                                      newRead: after,
-                                                                      arabicDay: arabicDay,
-                                                                      period: period,
-                                                                      wa2t: wa2t,
-                                                                      englishDay: englishDay,
-                                                                      oldReadings: data['AfterReadings'],
-                                                                      oldDays: data['Days_English_after'],
-                                                                      oldAfterDateTime: data['AfterDateTime'],
-                                                                      oldAfterReadingsDateArabic: data['AfterReadingsDateArabic'],
-                                                                      dateTime: DateTime.now(),
-                                                                    );
-                                                                    _reading
-                                                                        .clear();
-                                                                    Navigator.pop(
-                                                                        context);
-                                                                  }
-                                                                });
-                                                              },
-                                                              // icon: Icon(Icons.add),
-                                                              child: const Text(
-                                                                'ادخال القراءة ',
-                                                                textAlign:
-                                                                    TextAlign
-                                                                        .center,
-                                                              )),
+                                                      Container(
+                                                        alignment:
+                                                            Alignment.center,
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                      .only(
+                                                                  top: 20.0),
+                                                          child: SizedBox(
+                                                            height: 54,
+                                                            child: ElevatedButton(
+                                                                style: ElevatedButton
+                                                                    .styleFrom(
+                                                                        fixedSize:
+                                                                            Size(204,
+                                                                                37),
+                                                                        textStyle: TextStyle(
+                                                                            fontSize: 20 * textScale),
+                                                                        shape:
+                                                                            RoundedRectangleBorder(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(52),
+                                                                        ),
+                                                                        primary: Color.fromRGBO(
+                                                                            187,
+                                                                            214,
+                                                                            197,
+                                                                            1)),
+                                                                onPressed: () {
+                                                                  setState(() {
+                                                                    time();
+                                                                    timeInEnglish();
+                                                                    tag = 0;
+                                                                    after = double
+                                                                        .parse(_reading
+                                                                            .text);
+                                                                    if (after <=
+                                                                        0) {
+                                                                      showDialog<
+                                                                          String>(
+                                                                        context:
+                                                                            context,
+                                                                        builder:
+                                                                            (BuildContextcontext) =>
+                                                                                AlertDialog(
+                                                                          title: const Text(
+                                                                              'ERROR'),
+                                                                          content:
+                                                                              const Text('الرقم الذي ادخلته خاطئ  , الرجاء اعادة ادخال الرقم '),
+                                                                          actions: <
+                                                                              Widget>[
+                                                                            TextButton(
+                                                                              onPressed: () =>
+                                                                                  Navigator.pop(context, 'OK'),
+                                                                              child:
+                                                                                  const Text('OK'),
+                                                                            ),
+                                                                          ],
+                                                                        ),
+                                                                      );
+                                                                    } else {
+                                                                      doctor.writeReadingsAfter(
+                                                                        newRead: after,
+                                                                        arabicDay: arabicDay,
+                                                                        period: period,
+                                                                        wa2t: wa2t,
+                                                                        englishDay: englishDay,
+                                                                        oldReadings: data['AfterReadings'],
+                                                                        oldDays: data['Days_English_after'],
+                                                                        oldAfterDateTime: data['AfterDateTime'],
+                                                                        oldAfterReadingsDateArabic: data['AfterReadingsDateArabic'],
+                                                                        dateTime: DateTime.now(),
+                                                                      );
+                                                                      _reading
+                                                                          .clear();
+                                                                      Navigator.pop(
+                                                                          context);
+                                                                    }
+                                                                  });
+                                                                },
+                                                                // icon: Icon(Icons.add),
+                                                                child: const Text(
+                                                                  'ادخال القراءة ',
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                )),
+                                                          ),
                                                         ),
                                                       ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              )
-                                            ],
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
+                                            ),
                                           ),
-                                        ),
-                                      );
-                                    });
-                                  },
-                                  //label: Text(''),
-                                )
-                              ],
-                            ),
-                          )
-                        ],
+                                        );
+                                      });
+                                    },
+                                    //label: Text(''),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
 
                       ///title of readings
@@ -672,7 +681,7 @@ class _patientInformationState extends State<patientInformation> {
                                     const EdgeInsets.only(right: 8.0, top: 25),
                                 child: Text(
                                   'القراءات',
-                                  style: TextStyle(fontSize: 30),
+                                  style: TextStyle(fontSize: 40 * textScale),
                                 ),
                               ))
                         ],
@@ -701,7 +710,7 @@ class _patientInformationState extends State<patientInformation> {
                   ),
                 ),
               ),
-            ]),
+            ),
           );
         }
 
@@ -740,8 +749,8 @@ class _patientInformationState extends State<patientInformation> {
           color: Color.fromRGBO(52, 91, 99, 0.81),
           elevation: 10.0,
           child: SizedBox(
-            height: 115.0,
-            width: 315,
+            height: screenHeight * 0.15,
+            width: screenWidth * 0.8,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               //crossAxisAlignment: CrossAxisAlignment.center,
@@ -755,7 +764,7 @@ class _patientInformationState extends State<patientInformation> {
                       Text(
                         'صائم',
                         style: TextStyle(
-                          fontSize: 14,
+                          fontSize: 20 * textScale,
                           color: Colors.white,
                         ),
                       ),
@@ -764,14 +773,14 @@ class _patientInformationState extends State<patientInformation> {
                         double.parse(read) >= 130.0 ? 'مرتفع'
                             : double.parse(read) <= 80.0 ? 'منخفض' : 'طبيعي'  ,
                         style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 40 * textScale,
                           color: Colors.white,
                         ),
                       ),
                       Text(
                         '$dateC',
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 12 * textScale,
                           color: Colors.white,
                         ),
                       ),
@@ -822,8 +831,8 @@ class _patientInformationState extends State<patientInformation> {
         color: Color.fromRGBO(187, 214, 197, 0.9),
         elevation: 10.0,
         child: SizedBox(
-          height: 115.0,
-          width: 315,
+          height: screenHeight * 0.15,
+          width: screenWidth * 0.8,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             //crossAxisAlignment: CrossAxisAlignment.center,
@@ -837,7 +846,7 @@ class _patientInformationState extends State<patientInformation> {
                     Text(
                       'غير صائم',
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 20 * textScale,
                         color: Colors.white,
                       ),
                     ),
@@ -846,14 +855,14 @@ class _patientInformationState extends State<patientInformation> {
                       double.parse(read) >= 180.0 ? 'مرتفع'
                           : double.parse(read) <= 130.0 ? 'منخفض' : 'طبيعي'  ,
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 40 * textScale,
                         color: Colors.white,
                       ),
                     ),
                     Text(
                       '$dateC',
                       style: TextStyle(
-                        fontSize: 12,
+                        fontSize: 12 * textScale,
                         color: Colors.white,
                       ),
                     ),

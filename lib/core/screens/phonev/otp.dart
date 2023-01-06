@@ -1,4 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:new_3ala5er/core/screens/patient/bar.dart';
+import 'package:new_3ala5er/core/service/firebase.service.dart';
 import 'package:pinput/pinput.dart';
 import '../doctor/regestrationDrPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -13,7 +16,8 @@ bool check = false;
 bool selected = false;
 class OTPScreen extends StatefulWidget {
   late final String phone;
-  OTPScreen(this.phone);
+  String? drID;
+  OTPScreen({required this.phone , this.drID});
   @override
   _OTPScreenState createState() => _OTPScreenState();
 }
@@ -306,21 +310,51 @@ class _OTPScreenState extends State<OTPScreen> {
                                   .then((value) async {
                                     print("Arrivced");
                                     print(value.user?.uid);
-                                    print(check );
+                                    print(check);
+                                    if(widget.drID != null){
+                                      await UserSimplePreferencesUser.setUserID(value.user!.uid);
+                                      await UserSimplePreferencesDoctorID.setDrID(widget.drID!);
+                                      await UserSimplePreferencesDoctorID.setUserType('Pa');
+                                      await UserSimplePreferencesUser.setCtOfWeek('0');
+                                      await UserSimplePreferencesUser.setLastOpen(DateTime.now().toString());
 
-                                if (value.user?.uid != null  && choice == true) {
-                                  Navigator.pushAndRemoveUntil(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => doctor()),
-                                          (route) => false);
-                                }else if(value.user?.uid != null  && choice  == false){
-                                  Navigator.pushAndRemoveUntil(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => RegistrationPatientPage()),
-                                          (route) => false);
-                                }
+                                      DocumentSnapshot<Map<String, dynamic>> dd  = await FirebaseFirestore.instance
+                                                .collection('/doctors')
+                                                .doc(widget.drID)
+                                                .collection('/patient')
+                                                .doc(value.user!.uid)
+                                                .get();
+
+                                      Map<String, dynamic> data = dd.data() as Map<String, dynamic>;
+
+                                      print("&&&&&&& name : ${data['Name']}");
+
+                                      await UserSimplePreferencesUser.setPaName(data['Name']);
+                                      Navigator.pushAndRemoveUntil(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => barhome()),
+                                              (route) => false
+                                      );
+                                    }
+                                    else {
+                                      await UserSimplePreferencesUser.setUserID(value.user!.uid);
+
+                                      await UserSimplePreferencesDoctorID.setUserType('Pa');
+                                      if (value.user?.uid != null  && choice == true) {
+                                        Navigator.pushAndRemoveUntil(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => doctor()),
+                                                (route) => false);
+                                      }else if(value.user?.uid != null  && choice  == false){
+                                        Navigator.pushAndRemoveUntil(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => RegistrationPatientPage(phone: widget.phone)),
+                                                (route) => false);
+                                      }
+                                    }
                               });
                             } catch (e) {
                               showDialog<String>(context: context, builder: (BuildContextcontext) =>

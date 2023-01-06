@@ -1,0 +1,27 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-4.3.1/
+cloud_firestore_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-3.2.1/
+file_picker=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/file_picker-4.6.1/
+firebase_auth=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-4.2.5/
+firebase_auth_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-5.2.4/
+firebase_core=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-2.4.1/
+firebase_core_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-2.1.0/
+firebase_database=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-10.0.9/
+firebase_database_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database_web-0.2.1+19/
+firebase_storage=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-11.0.10/
+firebase_storage_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-3.3.19/
+flutter_plugin_android_lifecycle=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/
+huawei_scan=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_scan-2.8.0+300/
+open_file=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/open_file-3.2.1/
+path_provider_linux=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.7/
+path_provider_windows=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.7/
+pdf_viewer_plugin=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_viewer_plugin-2.0.1/
+shared_preferences=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15/
+shared_preferences_android=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.14/
+shared_preferences_ios=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_ios-2.1.1/
+shared_preferences_linux=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-2.1.2/
+shared_preferences_macos=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/
+shared_preferences_web=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.4/
+shared_preferences_windows=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-2.1.2/
+smart_auth=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/smart_auth-1.0.8/
+sms_otp_auto_verify=/Users/shady-jaradat/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/sms_otp_auto_verify-2.1.0/

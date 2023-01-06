@@ -6,7 +6,7 @@ import '../../service/firebase.service.dart';
 import 'CHART_PAGES/char_patient.dart';
 import 'infopage_patient.dart';
 
-import 'menu/edit_reg.dart';
+import 'menu/edit_patient_page.dart';
 import 'menu/twasel.dart';
 
 //String nn = name_patient;
@@ -98,7 +98,7 @@ class _barhomeState extends State<barhome> {
             ],
           ),
           onTap: () {
-           // Navigator.push( context, MaterialPageRoute(builder: (context) => update_reg()));
+            Navigator.push( context, MaterialPageRoute(builder: (context) => EditPatientPage()));
           },
         ),
         Divider(

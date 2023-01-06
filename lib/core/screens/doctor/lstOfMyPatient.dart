@@ -66,9 +66,11 @@ class _listOfPatientState extends State<listOfPatient> {
       for(int i=0;i<x.length;i++){
         final user = x[i].data();
         setState(() {
+          print("shoooo ?? ");
+          print(user['Name']);
           listOfName.add(user['Name'].toString());
           listOfIDs.add(user['User'].toString());
-          listOfLastReading.add(user['lastRead']);
+          listOfLastReading.add(double.parse(user['lastRead'].toString()));
           listOfIsHaveNewRead.add(user['isHaveNewRead']);
           listOfHistories.add(user['history']);
         });
@@ -295,6 +297,7 @@ class _listOfPatientState extends State<listOfPatient> {
               ),
             ),
           ),
+          listOfName.isNotEmpty || listOfName != null ?
           Expanded(
             child: Padding(
               padding: EdgeInsets.all(18.0),
@@ -302,6 +305,7 @@ class _listOfPatientState extends State<listOfPatient> {
                   itemCount: listOfName.length,
                   itemBuilder: (context,index){
                     print("ana hon");
+                    print(listOfName);
                     return listOfName[index].contains(searchString)?
                     PatientCard(
                       name: listOfName[index] ,
@@ -314,7 +318,7 @@ class _listOfPatientState extends State<listOfPatient> {
                   }
               ),
             ),
-          ),
+          ) : Container(),
         ],
       ),
     );

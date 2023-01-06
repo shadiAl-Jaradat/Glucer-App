@@ -27,6 +27,7 @@ class FirebaseServiceDoctor {
   late String? doctorId;
   late String? DateOfPatient;
   late String? nationalNumberPatient;
+  late String? patentPhone;
 
 
   FirebaseServiceDoctor({
@@ -41,6 +42,7 @@ class FirebaseServiceDoctor {
     this.lastnameDoctor,
     this.DateBirthDoctor,
     this.doctorID,
+    this.patentPhone
   });
 
 
@@ -66,18 +68,13 @@ class FirebaseServiceDoctor {
     final User? user = FirebaseAuth.instance.currentUser;
     final uid = user?.uid;
 
-    await UserSimplePreferencesUser.setUserID(uid!);
-    await UserSimplePreferencesUser.setPaName(namePatient!);
-    await UserSimplePreferencesUser.setLastOpen(DateTime.now().toString());
-    await UserSimplePreferencesUser.setCtOfWeek('0');
-    await UserSimplePreferencesDoctorID.setDrID(doctorId!);
-    await UserSimplePreferencesDoctorID.setUserType('Pa');
+
 
     await FirebaseFirestore.instance
         .collection('/doctors')
         .doc(doctorId)
         .collection('/patient')
-        .doc(uid)
+        .doc(uid == null || uid.isEmpty ? UserSimplePreferencesUser.getUserID() : uid)
         .set({
       'Name': namePatient,
       'Doctor code': doctorId,
@@ -86,10 +83,11 @@ class FirebaseServiceDoctor {
       'Date of birth': DateOfPatient,
       'National ID': nationalNumberPatient,
       'Diabetes Type': type_Di,
-      'User': uid,
+      'User': uid == null || uid.isEmpty ? UserSimplePreferencesUser.getUserID() : uid,
       'history': "",
       'isHaveNewRead':false,
       'lastRead': 0,
+      'phone':patentPhone,
     });
 
     createNewWeek();

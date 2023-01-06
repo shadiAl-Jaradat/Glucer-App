@@ -1,4 +1,4 @@
-#Tue Jan 03 18:59:48 EET 2023
+#Fri Jan 06 20:35:54 EET 2023
 base.2=/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
 base.1=/Users/shady-jaradat/StudioProjects/Diabetes-App/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex

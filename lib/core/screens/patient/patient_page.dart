@@ -14,6 +14,8 @@ String time = 'اليوم - الشهر - السنة';
 final _time = TextEditingController();
 
 class RegistrationPatientPage extends StatefulWidget {
+  String phone;
+  RegistrationPatientPage({required this.phone});
   @override
   _RegistrationPatientPageState createState() => _RegistrationPatientPageState();
 }
@@ -277,7 +279,11 @@ class _RegistrationPatientPageState extends State<RegistrationPatientPage> {
                                               ),
                                               minimumSize: Size(308, 35),
                                             ),
-                                            onPressed: () {
+                                            onPressed: () async{
+                                              await UserSimplePreferencesUser.setPaName(namePatient!);
+                                              await UserSimplePreferencesUser.setLastOpen(DateTime.now().toString());
+                                              await UserSimplePreferencesUser.setCtOfWeek('0');
+                                              await UserSimplePreferencesDoctorID.setDrID(doctorId!);
                                               if (_formKey.currentState!
                                                   .validate()) {
                                                 ScaffoldMessenger.of(context)
@@ -299,7 +305,8 @@ class _RegistrationPatientPageState extends State<RegistrationPatientPage> {
                                                   heightPatient: heightPatient,
                                                   namePatient: namePatient,
                                                   nationalNumberPatient: nationalNumberPatient,
-                                                  weightPatient: weightPatient
+                                                  weightPatient: weightPatient,
+                                                  patentPhone: widget.phone,
                                                 ).insertDataCollection();
                                                 Navigator.push(context, MaterialPageRoute(builder: (context) => barhome()));
                                               } else {
@@ -318,8 +325,7 @@ class _RegistrationPatientPageState extends State<RegistrationPatientPage> {
                                                     ],
                                                   ),
                                                 );
-                                              }
-                                              ;
+                                              };
                                             },
                                             child: Text(
                                               'التالي',

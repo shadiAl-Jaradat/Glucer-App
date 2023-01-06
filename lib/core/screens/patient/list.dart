@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-late String type_Di;
+ late String type_Di;
 class DiabetesType extends StatefulWidget {
-  const DiabetesType({Key? key}) : super(key: key);
+  String?  firstValue;
+  DiabetesType({
+    this.firstValue,
+    Key? key}) : super(key: key);
 
   @override
   _DiabetesTypeState createState() {
@@ -12,6 +15,13 @@ class DiabetesType extends StatefulWidget {
 class _DiabetesTypeState extends State<DiabetesType> {
   String? _value;
 
+  @override
+  void initState() {
+    if(widget.firstValue !=  null && widget.firstValue!.isNotEmpty){
+      _value =  widget.firstValue!;
+    }
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -45,6 +55,7 @@ class _DiabetesTypeState extends State<DiabetesType> {
         onChanged: (String? value) {
           setState(() {
             _value = value;
+            //TODO: must change it
             type_Di = value!;
             // validator:
             // (value) => value == null ? 'Please fill in your gender' : null;

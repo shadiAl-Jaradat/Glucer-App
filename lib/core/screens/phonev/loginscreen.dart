@@ -11,9 +11,12 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _controller = TextEditingController();
+  final _controllerDrID = TextEditingController();
+  bool newAccount = false;
 
   @override
   Widget build(BuildContext context) {
+
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -146,6 +149,79 @@ class _LoginScreenState extends State<LoginScreen> {
                         ],
                       ),
                     ),
+
+
+                    newAccount == false ?
+                    const Padding(
+                      padding: EdgeInsets.only(top: 20.0,bottom: 20),
+                      child: Text(
+                        "ادخل رمز طبيبك ",
+                        style: TextStyle(
+                          color: Color.fromRGBO(117, 121, 122, 1),
+                          fontSize: 22,
+                        ),
+                      ),
+                    )
+                    : Container(),
+
+                    newAccount == false ?
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 150.0),
+                      child: TextField(
+                        style: TextStyle(fontSize: 22),
+                        onTap: () => setState(() { selected = true; }),
+                        onEditingComplete: () => setState(() {
+                          selected = false;
+                          FocusScope.of(context).requestFocus(new FocusNode());
+                          //FocusScope.of(context).requestFocus(new FocusNode());
+                        }),
+                        controller: _controllerDrID,
+                        decoration: InputDecoration(
+                          isCollapsed: true,
+                          hintText: "ABC00",
+                          hintStyle: TextStyle(
+                              color: Color.fromRGBO(117, 121, 122, .27)),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(189, 208, 201, 1)),
+                          ),
+                        ),
+                        maxLength: 5,
+                        keyboardType: TextInputType.text,
+                      ),
+                    )
+                    :Container(),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          TextButton(
+                              onPressed: (){
+                                setState(() {
+                                  newAccount = true;
+                                });
+                              },
+                              child: Text("انشاء حساب جديد ")
+                          ),
+
+                          TextButton(
+                              onPressed: (){
+                                setState(() {
+                                  newAccount = false;
+                                });
+                              },
+                              child: Text("لدي حساب قديم ")
+                          ),
+                        ],
+                      ),
+                    ),
+
+
+
+
                     Padding(
                       padding: const EdgeInsets.only(top: 60.0),
                       child: ElevatedButton(
@@ -159,9 +235,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () {
                             String ss = _controller.text.toString();
                             if (ss.length == 9) {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) =>
-                                      OTPScreen(_controller.text)));
+                              if(newAccount == true)
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => OTPScreen(phone: _controller.text)));
+                              else
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => OTPScreen(phone: _controller.text , drID: _controllerDrID.text,)));
+
                             } else {
                               showDialog<String>(
                                 context: context,

@@ -6,7 +6,7 @@ INJECTED from /Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/m
 INJECTED from /Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from /Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_storage] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
@@ -114,8 +114,8 @@ application
 ADDED from /Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/main/AndroidManifest.xml:3:4-40:19
 MERGED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_storage] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
@@ -426,8 +426,8 @@ MERGED from [com.huawei.hms:stats:6.6.0.300] /Users/shady-jaradat/.gradle/caches
 		ADDED from /Users/shady-jaradat/StudioProjects/Diabetes-App/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:19
 MERGED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_storage] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
@@ -458,12 +458,32 @@ ADDED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App
 		ADDED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_database] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cf8bafb88593f0746e2c4074485d5783/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cf8bafb88593f0746e2c4074485d5783/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/48ab389c59239cb04827c2f9c59c3cf7/jetified-firebase-database-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/48ab389c59239cb04827c2f9c59c3cf7/jetified-firebase-database-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.huawei.hms:stats:6.6.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/63a03808f2ba809af378cbc922fb564b/jetified-stats-6.6.0.300/AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:stats:6.6.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/63a03808f2ba809af378cbc922fb564b/jetified-stats-6.6.0.300/AndroidManifest.xml:12:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3f81e231c39d3dd0027308eede4b4699/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3f81e231c39d3dd0027308eede4b4699/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
+MERGED from [com.huawei.hms:ml-computer-ha-inner:2.0.1.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0c7b3319b0dccc13ab449a301a36ef15/jetified-ml-computer-ha-inner-2.0.1.300/AndroidManifest.xml:11:5-79
+MERGED from [com.huawei.hms:ml-computer-ha-inner:2.0.1.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0c7b3319b0dccc13ab449a301a36ef15/jetified-ml-computer-ha-inner-2.0.1.300/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:cloud_firestore] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:12:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
 ADDED from [:firebase_auth] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -514,24 +534,6 @@ action#com.google.android.gms.auth.api.phone.SMS_RETRIEVED
 ADDED from [:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-94
 	android:name
 		ADDED from [:sms_otp_auto_verify] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/sms_otp_auto_verify/intermediates/library_manifest/debug/AndroidManifest.xml:13:25-91
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/a2eec741e057c0774a57d2c7134e8465/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/d2e870b02ffb2eaf56ec99d0c9690b6d/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cf8bafb88593f0746e2c4074485d5783/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/cf8bafb88593f0746e2c4074485d5783/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/48ab389c59239cb04827c2f9c59c3cf7/jetified-firebase-database-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/48ab389c59239cb04827c2f9c59c3cf7/jetified-firebase-database-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.huawei.hms:stats:6.6.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/63a03808f2ba809af378cbc922fb564b/jetified-stats-6.6.0.300/AndroidManifest.xml:12:5-79
-MERGED from [com.huawei.hms:stats:6.6.0.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/63a03808f2ba809af378cbc922fb564b/jetified-stats-6.6.0.300/AndroidManifest.xml:12:5-79
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3f81e231c39d3dd0027308eede4b4699/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/3f81e231c39d3dd0027308eede4b4699/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
-MERGED from [com.huawei.hms:ml-computer-ha-inner:2.0.1.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0c7b3319b0dccc13ab449a301a36ef15/jetified-ml-computer-ha-inner-2.0.1.300/AndroidManifest.xml:11:5-79
-MERGED from [com.huawei.hms:ml-computer-ha-inner:2.0.1.300] /Users/shady-jaradat/.gradle/caches/transforms-2/files-2.1/0c7b3319b0dccc13ab449a301a36ef15/jetified-ml-computer-ha-inner-2.0.1.300/AndroidManifest.xml:11:5-79
-	android:name
-		ADDED from [:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
 activity#com.huawei.hms.flutter.scan.customizedview.CustomizedViewActivity
 ADDED from [:huawei_scan] /Users/shady-jaradat/StudioProjects/Diabetes-App/build/huawei_scan/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:74
 	android:exported

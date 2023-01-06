@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -62,39 +60,6 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
   List<ChartData> chartDataBefore = [];
   List<ChartData> chartDataAfter = [];
 
-  // void fillChartDataBefore({required List<dynamic> beforeReadings , required List<dynamic> beforeTime , required List<dynamic> beforeDays}){
-  //   chartDataBefore.clear();
-  //   for(int i=0;i< beforeReadings.length ; i++){
-  //     chartDataBefore.add(
-  //         ChartData(
-  //             (
-  //                 (
-  //                     (DateTime.parse(beforeTime[i].toString()).hour / 3600)
-  //                     +( DateTime.parse(beforeTime[i].toString()).minute / 60)
-  //                     + DateTime.parse(beforeTime[i].toString()).second
-  //                 ) / 86400)
-  //                 + getNumOfDay(beforeDays[i]),
-  //             double.parse(beforeReadings[i].toString())
-  //         )
-  //     );
-  //   }
-  // }
-
-  // void fillChartDataAfter({required List<dynamic> afterReadings , required List<dynamic> afterTime , required List<dynamic> afterDays}){
-  //   chartDataAfter.clear();
-  //   for(int i=0;i< afterReadings.length ; i++){
-  //     chartDataAfter.add(
-  //         ChartData(
-  //             ((
-  //                 (DateTime.parse(afterTime[i].toString()).hour / 3600)
-  //                     +( DateTime.parse(afterTime[i].toString()).minute / 60)
-  //                     + DateTime.parse(afterTime[i].toString()).second
-  //             ) / 86400)+ getNumOfDay(afterDays[i]),
-  //             double.parse(afterReadings[i].toString())
-  //         )
-  //     );
-  //   }
-  // }
 
   @override
   void initState() {
@@ -165,10 +130,15 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
   }
 
 
-
+  late double screenHeight;
+  late double screenWidth;
+  late double textScale;
 
   @override
   Widget build(BuildContext context) {
+    screenHeight = MediaQuery.of(context).size.height;
+    screenWidth = MediaQuery.of(context).size.width;
+    textScale = MediaQuery.of(context).textScaleFactor;
 
     CollectionReference users = FirebaseFirestore.instance
         .collection('/doctors')
@@ -179,7 +149,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
       future: users
           .doc(UserSimplePreferencesUser.getUserID() ?? uid)
           .collection('/weeks')
-          .doc(UserSimplePreferencesUser.getCtOfWeek())
+          .doc(UserSimplePreferencesUser.getCtOfWeek() ?? "0")
           .get(),
       builder:
           (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
@@ -202,7 +172,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                 child: ListView(
                   children: [
                     Container(
-                      height: 300,
+                      height: screenHeight * 0.42,
                       child: Padding(
                         padding: const EdgeInsets.only(top: 8),
                         child: Directionality(
@@ -285,16 +255,6 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                     SizedBox(
                       height: 8,
                     ),
-                    SizedBox(
-                      width: 30,
-                      child: Container(
-                        alignment: Alignment.center,
-                        //color: Colors.red,
-                        child: SizedBox(width: 180, child: ToggleButton()),
-                      ),
-                    ),
-
-
 
                     //TODO toggle Button
 
@@ -341,8 +301,8 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                                       ),
 
                                       //color: Colors.black,
-                                      height: 141,
-                                      width: 114,
+                                      height: screenHeight * 0.22,
+                                      width: screenWidth * 0.30,
                                       child: Padding(
                                         padding: const EdgeInsets.only(top: 27),
                                         child: Column(
@@ -363,7 +323,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                                                 _cardListFiles.add(createCardFile(path));
                                               },
                                               //icon: Icon(Icons.add),
-                                              child: Icon(Icons.add),
+                                              child: Icon(Icons.add, size: 40 * textScale),
                                             ),
                                             Align(
                                               alignment: Alignment.center,
@@ -376,7 +336,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                                                   style: TextStyle(
                                                       color: Color.fromRGBO(
                                                           91, 122, 129, 1),
-                                                      fontSize: 15),
+                                                      fontSize: 25 * textScale),
                                                   textAlign: TextAlign.center,
                                                 ),
                                               ),
@@ -428,8 +388,8 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
         padding: const EdgeInsets.only(top: 10, right: 5, left: 5),
         child: Container(
           //color: Color.fromRGBO(218, 228, 229, 1),
-          height: 141,
-          width: 114,
+          height: screenHeight * 0.22,
+          width: screenWidth * 0.30,
           decoration: BoxDecoration(
             color: Color.fromRGBO(218, 228, 229, 1),
             borderRadius: BorderRadius.all(Radius.circular(14)),
@@ -449,8 +409,8 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                     padding: const EdgeInsets.all(1.0),
                     child: Image(
                       image: AssetImage('images/lab.png'),
-                      width: 35.5,
-                      height: 40,
+                      height: screenHeight * 0.1,
+                      width: screenWidth * 0.1,
                     )),
 
                 //TODO: change الاول to a number based on number of labs entered
@@ -461,7 +421,7 @@ class _ChartLabsPageState extends State<ChartLabsPage> {
                     child: Text(
                       'نتيحة المختبر ',
                       style: TextStyle(
-                          color: Color.fromRGBO(91, 122, 129, 1), fontSize: 10),
+                          color: Color.fromRGBO(91, 122, 129, 1), fontSize: 25 * textScale),
                       textAlign: TextAlign.center,
                     ),
                   ),
