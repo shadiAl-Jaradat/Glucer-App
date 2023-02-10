@@ -2,7 +2,7 @@
 
 ### Screen Shots
 Patient App:
-<img src="Patient Views.png" width="900">
+<img width="900" src="https://user-images.githubusercontent.com/94618324/218185549-65ba9e57-9229-4102-aeff-ae7a3a87aae7.png">
 
 Doctor App:
 <img src="Doctor Views.png" width="900">
