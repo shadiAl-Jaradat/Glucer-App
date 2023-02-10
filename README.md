@@ -8,7 +8,7 @@ Doctor App:
 <img src="Doctor Views.png" width="900">
 
 Sign UP Views:
-<img src="Sign UP Views 2.png" width="900">
+<img src="https://user-images.githubusercontent.com/94618324/218181362-9fcf1348-85a0-4f2a-940e-33dec7c486d6.png" width="900">
 ---
 
 ### Table of Contents
