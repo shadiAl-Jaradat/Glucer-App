@@ -5,7 +5,8 @@ Patient App:
 <img width="900" src="https://user-images.githubusercontent.com/94618324/218185549-65ba9e57-9229-4102-aeff-ae7a3a87aae7.png">
 
 Doctor App:
-<img src="Doctor Views.png" width="900">
+<img width="900" src="https://user-images.githubusercontent.com/94618324/218187628-ba464ea1-7de2-4956-b836-855fe6535205.png">
+
 
 Sign UP Views:
 <img src="https://user-images.githubusercontent.com/94618324/218181362-9fcf1348-85a0-4f2a-940e-33dec7c486d6.png" width="900">
