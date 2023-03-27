@@ -34,13 +34,13 @@ Sign UP Views:
 
 - Flutter packages 
 - Firebase ( Authentication using mobile number OTP code - FireStore - Storage ) 
-- Flutter Charts 
-- Sharedpreferences Flutter - (UserDefaults)
+- syncfusion_flutter_charts
+- Sharedpreferences Flutter - (PreferencesManager / local storage )
 
 
 ## How To Use
 
-- Clone the project and run it on android studio or VS code 
+- Clone the project and run it on android studio or VS code on android emulators only 
 
 ---
 
