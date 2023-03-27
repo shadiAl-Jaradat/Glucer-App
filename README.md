@@ -1,6 +1,7 @@
  # Glucer App
  <img width="250" height ="250" src="https://user-images.githubusercontent.com/94618324/218552147-94668d20-f70c-4f1a-bcf1-680caaeadb10.png"> 
 
+## Glucer  stands for Glucose + Keeper  
 
 ### Screen Shots
 Patient App:
